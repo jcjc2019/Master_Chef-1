@@ -1,0 +1,2 @@
+module CookBooksHelper
+end
