@@ -1,4 +1,7 @@
 class CookBook < ApplicationRecord
-    balongs_to :user
-    balongs_to :recipe
+    belongs_to :user
+    belongs_to :recipe
+
+    validates :name, presence: true
+
 end

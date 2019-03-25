@@ -1,0 +1,20 @@
+<h1>My Page</h1>
+<ul>
+
+<h2>Username:<%= @user.username%></h2>
+
+<li>
+<h2>My Cookbook</h2>
+<% @user.cook_books.each do |cook_book|%></p>
+    <p><%= cook_book.name %>
+<%end%>
+</li>
+
+<li>
+<h2>All Recipes Submitted by Me</h2>
+<% @user.recipes.each do |recipe|%></p>
+    <p><%= recipe.name %>
+<%end%>
+</li>
+
+</ul>

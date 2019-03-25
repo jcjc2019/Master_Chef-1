@@ -1,0 +1,32 @@
+<h1>Create A New User</h1>
+<%= form_with( model: @user ) do | form | %>
+    <ul>
+    <li>
+    <div class="form-group">
+        <%= form.label "Username" %>
+        <% name_error_class = 'is-invalid' if(@errors["username"]) %>
+        <%= form.text_field :username, class: "form-control #{name_error_class}" %>
+        <% (@errors["username"] || [] ).each do | message | %>
+            <span class="invalid-feedback"><%= message %></span>
+        <% end %>
+    </div>
+    </li>
+    <li>
+    <div class="form-group">
+        <%= form.label "Password" %>
+        <%= form.text_field :password, class: "form-control #{ @errors["password"] ? 'is-invalid' : '' }" %>
+        <% (@errors["password"] || [] ).each do | message | %>
+            <span class="invalid-feedback"><%= message %></span>
+        <% end %>
+    </div>
+    </li>
+    <li>
+    <div class="form-group">
+        <%= form.label "Translator" %>
+        <p>Do you want to be a translator to translate Chinese-language recipes into English?
+        <p>Yes: <%= form.radio_button :translator, "true" %>
+        <p>No: <%= form.radio_button :translator, "false" %>
+    </div>
+    </li>
+    <p></p><%= form.submit %>
+<% end %>

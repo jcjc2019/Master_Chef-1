@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2019_03_25_204026) do
 
   create_table "cook_books", force: :cascade do |t|
-    t.string "name"
+    t.string "name", default: "My Cookbook"
     t.integer "user_id"
     t.integer "recipe_id"
     t.datetime "created_at", null: false
