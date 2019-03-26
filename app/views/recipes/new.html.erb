@@ -1,0 +1,102 @@
+<ul><h1>Create A New Recipe</h1></ul>
+<%= form_with( model: @recipe ) do | form | %>
+    <ul>
+    <div class="form-group row">
+        <div class ="col-auto">
+            <h3><%= form.label "Name" %></h3>
+            <% name_error_class = 'is-invalid' if(@errors["name"]) %>
+            <%= form.text_field :name, class: "form-control #{name_error_class}" %>
+            <% (@errors["name"] || [] ).each do | message | %>
+                <span class="invalid-feedback"><%= message %></span>
+            <% end %>
+        </div>
+    </div>
+
+    <div class="form-group row"> 
+        <div class ="col-auto">  
+        <p><%= form.label "Instructions" %></p>
+        <%= form.text_area :instructions, class: "form-control #{ @errors["instructions"] ? 'is-invalid' : '' }" %>
+        <% (@errors["instructions"] || [] ).each do | message | %>
+        <span class="invalid-feedback"><%= message %></span>
+        <% end %>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class ="col-auto">  
+            <p><%= form.label "Cook Time" %></p>
+            <%= form.text_field :cook_time, class: "form-control #{ @errors["cook_time"] ? 'is-invalid' : '' }" %>
+            <% (@errors["cook_time"] || [] ).each do | message | %>
+            <span class="invalid-feedback"><%= message %></span>
+            <% end %>
+        </div>
+    </div> 
+
+
+    <div class="form-group row">
+        <div class ="col-auto"> 
+        <p><%= form.label "History" %></p>
+        <%= form.text_area :history, class: "form-control #{ @errors["history"] ? 'is-invalid' : '' }" %>
+        <% (@errors["history"] || [] ).each do | message | %>
+        <span class="invalid-feedback"><%= message %></span>
+        <% end %>
+        </div>
+    </div> 
+
+    <div class="form-group row"> 
+        <div class ="col-auto">   
+            <p><%= form.label "Origin Century" %></p>
+            <%= form.text_field :origin_century, class: "form-control #{ @errors["origin_century"] ? 'is-invalid' : '' }" %>
+            <% (@errors["origin_century"] || [] ).each do | message | %>
+            <span class="invalid-feedback"><%= message %></span>
+            <% end %>
+        </div>
+    </div> 
+
+    <div class="form-group row"> 
+        <div class ="col-auto">   
+            <p><%= form.label "Spicy Level" %></p>
+        <div class="custom-control custom-radio custom-control-inline">
+            <p><%= form.radio_button :spicy_level, "hot" %> Hot</p>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <p><%= form.radio_button :spicy_level, "mild" %> Mild</p>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <p><%= form.radio_button :spicy_level, "medium" %> Medium</p>
+        </div>
+
+        </div>
+    </div> 
+
+    <div class="form-group row"> 
+        <div class ="col-auto">   
+            <p><%= form.label "Sweet Level (10-100)" %></p>
+            <p><%= form.select :from, ["10", '20','30', '40', '50','60', '70', '80', '90', '100'] %></p>
+        </div>
+    </div>
+    
+    <div class="form-group row"> 
+        <div class ="col-auto">   
+            <p><%= form.label "Calories" %></p>
+            <%= form.text_field :calories, class: "form-control #{ @errors["calories"] ? 'is-invalid' : '' }" %>
+            <% (@errors["calories"] || [] ).each do | message | %>
+            <span class="invalid-feedback"><%= message %></span>
+            <% end %>
+        </div>
+    </div> 
+
+    <div class="form-group row"> 
+        <div class ="col-auto">   
+            <p><%= form.label "Image Link" %></p>
+            <%= form.text_field :img_url, class: "form-control #{ @errors["img_url"] ? 'is-invalid' : '' }" %>
+            <% (@errors["img_url"] || [] ).each do | message | %>
+            <span class="invalid-feedback"><%= message %></span>
+            <% end %>
+        </div>
+    </div> 
+
+
+    <p><%= form.submit "Add a New Recipe", class: "btn btn-primary" %>
+<% end %>
+</ul>

@@ -1,0 +1,82 @@
+<h2 class = "text-center"><%= @recipe.name %></h2>
+
+<ul>
+<div class="table-responsive-xl">
+<table class="table">
+
+<tr>
+  <p><img src= "<%= @recipe.img_url %>" class="rounded" height="200" width="200">
+</tr>
+
+<tr>
+  <p>Spicy Level: <%= @recipe.spicy_level %>
+</tr>
+
+
+<tr>
+  <p>Sweet Level: <%= @recipe.sugar_level %>
+</tr>
+
+<tr>
+  <p>Calories: <%= @recipe.calories %>
+</tr>
+
+
+<tr>
+  <p>Cook Time: <%= @recipe.cook_time %>
+</tr>
+
+<tr>
+<p>Instructions: </p>
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#instructions" role="button" aria-expanded="false" aria-controls="instructions">
+    Show instructions
+  </a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#instructions" aria-expanded="false" aria-controls="instructions">
+    Hide instructions
+  </button>
+</p>
+<div class="collapse" id="instructions">
+  <div class="card card-body">
+    <%= @recipe.instructions%>
+  </div>
+</div>
+</tr>
+
+<tr>
+  <p>Region: <%= @recipe.language %>
+
+</tr>
+
+<tr>
+<p>History: </p>
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#history" role="button" aria-expanded="false" aria-controls="history">
+    Show history
+  </a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#history" aria-expanded="false" aria-controls="history">
+    Hide history
+  </button>
+</p>
+
+<div class="collapse" id="history">
+  <div class="card card-body">
+    <%= @recipe.history%>
+  </div>
+</div>
+</tr>
+
+<tr>
+  <p>Language of the Recipe: </p>
+    <%= @recipe.language %>
+</tr>
+
+<tr>
+  <%= form_with(method: 'patch', url: "/recipes/#{@recipe.id}/add_likes") do |f|%>
+      <%= f.submit "Like ", class: "btn btn-success"%>
+  <%end%>
+</tr>
+
+</table>
+</div>
+</ul>
