@@ -1,10 +1,16 @@
 class UsersController < ApplicationController
-    def index
-        @users = User.all
+    skip_before_action :authenticate, only:[:new, :create]
+
+    def current_user
+        User.find(session[:current_user_id]) if(session[:current_user_id])
     end
 
+    #def index
+     #   @users = User.all
+    #end
+
     def show
-        @user = User.find(params[:id])
+        @user = current_user if(current_user)
     end
 
     def new
