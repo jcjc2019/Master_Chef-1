@@ -1,8 +1,12 @@
 class UsersController < ApplicationController
-    skip_before_action :authenticate, only:[:new, :create]
+    # skip_before_action :authenticate, only:[:new, :create]
 
     def current_user
         User.find(session[:current_user_id]) if(session[:current_user_id])
+    end
+
+    def index
+       @users = User.all
     end
 
     def show
@@ -11,7 +15,7 @@ class UsersController < ApplicationController
 
     def new 
         @errors = flash[:errors] || {}
-        @user = User.new
+        @user = User.new(user_params[:user])
     end
 
     def create
