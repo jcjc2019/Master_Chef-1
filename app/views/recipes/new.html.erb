@@ -45,6 +45,13 @@
 
     <div class="form-group row"> 
         <div class ="col-auto">   
+            <p><%= form.label "Region" %></p>
+            <p><%= form.select :from, ["Guangdong/Cantonese", 'Sichuan','Jiangsu', 'Zhejiang', 'Fujian/Min','Hunan', 'Anhui', 'Shandong', 'Others'] %></p>
+        </div>
+    </div>
+
+    <div class="form-group row"> 
+        <div class ="col-auto">   
             <p><%= form.label "Origin Century" %></p>
             <%= form.text_field :origin_century, class: "form-control #{ @errors["origin_century"] ? 'is-invalid' : '' }" %>
             <% (@errors["origin_century"] || [] ).each do | message | %>

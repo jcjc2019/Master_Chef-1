@@ -29,11 +29,8 @@
 <tr>
 <p>Instructions: </p>
 <p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#instructions" role="button" aria-expanded="false" aria-controls="instructions">
-    Show instructions
-  </a>
   <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#instructions" aria-expanded="false" aria-controls="instructions">
-    Hide instructions
+    Show Details
   </button>
 </p>
 <div class="collapse" id="instructions">
@@ -44,19 +41,17 @@
 </tr>
 
 <tr>
-  <p>Region: <%= @recipe.language %>
+  <p>Region: <%= @recipe.region %>
 
 </tr>
 
 <tr>
 <p>History: </p>
 <p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#history" role="button" aria-expanded="false" aria-controls="history">
-    Show history
-  </a>
   <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#history" aria-expanded="false" aria-controls="history">
-    Hide history
+    Show Details
   </button>
+
 </p>
 
 <div class="collapse" id="history">

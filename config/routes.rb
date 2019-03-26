@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   patch '/recipes/:id/add_likes', to: 'recipes#add_likes' #add patch route under this route.
 
   resources :users
-
   resources :sessions
   get '/login', to:'sessions#new'
   post '/login', to: 'sessions#create'

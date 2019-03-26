@@ -6,7 +6,6 @@ class SessionsController < ApplicationController
      end
 
      def create
-              byebug
         @user = User.find_by(username: params[:username])  
         # grab username and check against the db password. If it's good, it assign the id to the coockie
 
