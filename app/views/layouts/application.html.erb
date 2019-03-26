@@ -17,21 +17,27 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   
 
-    <ul class="nav nav-pills nav-fill">
+  <ul class="nav nav-pills nav-fill" role="navigation">
       <li class="nav-item">
-        <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/users') ? 'active' : '' %>" href="/users" >Users</a>
+        <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/sessions') ? 'active' : '' %>" href="/sessions" >Welcome</a>
       </li>
+
+      <li class="nav-item">
+        <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/users') ? 'active' : '' %>" href="/users" >My Page</a>
+      </li>
+
       <li class="nav-item">
         <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/pets') ? 'active' : '' %>" href="/recipes" >Recipes</a>
       </li>
-       <li class="nav-item">
-        <%= link_to 'Logout', '/sessions/1', method: :delete %>
+      
+      <li class="nav-item">
+        <a class="nav-link <%= link_to 'Logout', '/sessions/1', method: :delete %>
       </li>
-    <div class="container">
-      <%= yield %>
-    </div>
-     
-</ul>
+  </ul>
+
+  <div class="container">
+    <%= yield %>
+  </div>
 
   </body>
 </html>

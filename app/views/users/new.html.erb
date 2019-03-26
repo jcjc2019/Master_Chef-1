@@ -1,9 +1,10 @@
 <ul><h1>Create A New User</h1></ul>
 <%= form_with( model: @user ) do | form | %>
     <ul>
+    <li>
     <div class="form-group row">
         <div class ="col-auto">
-            <h3><%= form.label "Username" %></h3>
+            <p><%= form.label "Username" %></p>
             <% name_error_class = 'is-invalid' if(@errors["username"]) %>
             <%= form.text_field :username, class: "form-control #{name_error_class}" %>
             <% (@errors["username"] || [] ).each do | message | %>
@@ -11,20 +12,33 @@
             <% end %>
         </div>
     </div>
-    
+    </li>
+    <li>
     <div class="form-group row">   
-        <h3><%= form.label "Password" %></h3>
-        <%= form.text_field :password, class: "form-control #{ @errors["password"] ? 'is-invalid' : '' }" %>
-        <% (@errors["password"] || [] ).each do | message | %>
-            <span class="invalid-feedback"><%= message %></span>
-        <% end %>
-
+        <div class ="col-auto">
+            <p><%= form.label "Password" %></p>
+            <% name_error_class = 'is-invalid' if(@errors["password"]) %>
+            <%= form.password_field :password, class: "form-control #{ @errors["password"] ? 'is-invalid' : '' }" %>
+            <% (@errors["password"] || [] ).each do | message | %>
+                <span class="invalid-feedback"><%= message %></span>
+            <% end %>
+        </div>
     </div>
-   
+   </li>
 
+    <li>
+    <div class="form-group row">   
+        <div class ="col-auto">
+            <p><%= form.label "Password Confirmation" %></p>
+            <%= form.password_field :password_confirmation %>
+        </div>
+    </div>
+   </li>
+
+    <li>
     <div class="form-group">
         <h2><% form.label "Translator" %></h2>
-        <h3>Do you want to translate Chinese-language recipes into English?</h3>
+        <p>Do you want to translate Chinese-language recipes into English?</p>
         <div class="custom-control custom-radio custom-control-inline">
             <p><%= form.radio_button :translator, "true" %>  Absolutely Yes!</p>
         </div>
@@ -32,8 +46,9 @@
             <p><%= form.radio_button :translator, "false" %>  No, I'm not bilingual.</p>
         </div>
     </div>
-
+    </li>
 
     <p><%= form.submit "Sign Up", class: "btn btn-primary" %>
+
 <% end %>
 </ul>

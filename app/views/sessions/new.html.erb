@@ -1,4 +1,4 @@
-<h1>Welcome to MasterChef</h1>
+<h1 class="text-center">Welcome to MasterChef</h1>
 <%= form_with( model: @user ) do | form | %>
     <ul>
     <li>
@@ -11,23 +11,38 @@
         <% end %>
     </div>
     </li>
+
     <li>
     <div class="form-group">
         <%= form.label "Password" %>
-        <%= form.text_field :password, class: "form-control #{ @errors["password"] ? 'is-invalid' : '' }" %>
+        <%= form.password_field :password, class: "form-control #{ @errors["password"] ? 'is-invalid' : '' }" %>
         <% (@errors["password"] || [] ).each do | message | %>
             <span class="invalid-feedback"><%= message %></span>
         <% end %>
     </div>
+    </li>
 
+    </ul>
+
+<ul>
+<div class="table-responsive">
+<table class="signup_login_table">
+
+<tr>
+    <td>
     <div class="form-group">
-      <%= form.submit "Login" %> 
+      <%= form.submit "Login", class: "btn btn-primary" %>
     </div>
-    <% end %>
+    <%end%>
+    </td>
 
- <div><%= button_to "Sign up", new_user_path,  method: :get %></div>
-
-
-
-
+    <td>
+    <div class="form-group">
+      <%= button_to "Sign up", new_user_path,  method: :get, class: "btn btn-success" %>
+    </div>
+    </td>
+</tr>
+</table>
+</div>
+</ul>
 
