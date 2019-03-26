@@ -1,0 +1,10 @@
+
+    <div class="form-group">
+        <%= form.label "Translator" %>
+        <p>Do you want to be a translator to translate Chinese-language recipes into English?
+        <p>Yes: <%= form.radio_button :translator, "true" %>
+        <p>No: <%= form.radio_button :translator, "false" %>
+    </div>
+    </li>
+    <p></p><%= form.submit  %>
+<% end %>
