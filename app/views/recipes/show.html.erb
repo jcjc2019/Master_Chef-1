@@ -5,7 +5,7 @@
 <table class="table">
 
 <tr>
-  <p><img src= "<%= @recipe.img_url %>" class="rounded" height="200" width="200">
+  <p><img src= "<%= @recipe.img_url %>" class="rounded" height="600" width="400">
 </tr>
 
 <tr>
@@ -38,7 +38,7 @@
 </p>
 <div class="collapse" id="instructions">
   <div class="card card-body">
-    <%= @recipe.instructions%>
+    <%= simple_format(@recipe.instructions) %>
   </div>
 </div>
 </tr>
@@ -61,7 +61,7 @@
 
 <div class="collapse" id="history">
   <div class="card card-body">
-    <%= @recipe.history%>
+    <%= simple_format(@recipe.history) %>
   </div>
 </div>
 </tr>
