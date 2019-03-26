@@ -15,7 +15,7 @@ class IngredientsController < ApplicationController
     def create
         @ingredient = Ingredient.new(ingredient_params[:ingredient])
         if @ingredient.valid?
-            @ingredient.save
+            @ingredient.save 
             redirect_to @ingredient
         else
             flash[:errors] = @ingredient.errors.messages
