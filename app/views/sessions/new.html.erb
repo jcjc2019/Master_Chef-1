@@ -1,5 +1,5 @@
 <h1 class="text-center">Welcome to MasterChef</h1>
-<%= form_with( model: @user ) do | form | %>
+<%= form_for( :session, url: login_path ) do | form | %>
     <ul>
     <li>
     <div class="form-group"> 

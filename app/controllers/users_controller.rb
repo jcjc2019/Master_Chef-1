@@ -13,7 +13,7 @@ class UsersController < ApplicationController
         @user = current_user if(current_user)
     end
 
-    def new
+    def new 
         @errors = flash[:errors] || {}
         @user = User.new
     end
@@ -37,7 +37,7 @@ class UsersController < ApplicationController
     end
 
     def update
-        @user = User.find(params[:id])
+        @user = User.find(params[:id]) 
         @user.assign_attributes(user_params[:user])
         if @user.valid?
             @user.save
@@ -58,6 +58,6 @@ class UsersController < ApplicationController
     private
 
     def user_params
-        params.permit(user:[:username, :password, :translator])
+        params.permit(user:[:username, :password_digest, :translator])
     end
 end
