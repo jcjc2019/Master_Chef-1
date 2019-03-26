@@ -18,4 +18,4 @@ class SessionsController < ApplicationController
         reset_session
         redirect_to '/login' 
      end   
-end  
+end   
