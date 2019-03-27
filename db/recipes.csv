@@ -1,4 +1,4 @@
-name,language,region,instructions,history,cook_time,origin_century,spicy_level,sugar_level,calories,likes,img_url,comment
+name,language,region,instructions,history,cook_time,origin_century,spicy_level,sugar_level,calories,likes,img_url,comment,cookbook_name
 Kung Pao Chicken,English,Sichuan,"1. Make the stir fry sauce:
 -- ½ tablespoon dark soy sauce
 -- 1 tablespoon light soy sauce
@@ -21,7 +21,7 @@ Kung Pao Chicken,English,Sichuan,"1. Make the stir fry sauce:
 
 6.Add in the mixed sauce
 
-7.Fry until the sauce is well coated. Mix with the remaining leek onion white sections and fried peanuts. Transfer out immediately and serve with rice!","The name of Kung Pao comes from a court official Ding Baozhen in Qing dynasty. The hero official Ding is a foodie who especially loves stir-fried diced chicken. During the time of being served as governor in Sichuan province, he frequently treats his guest with this dish and add dried chili peppers because People in Sichuan loves to eat hot chili. Later on, he is granted the title Taizi Shaobao also known as Kung Pao, which means the protector of the crown price. People name this dish after him to memory him.In China, chefs usually use chicken thighs to make this dish rather than boneless chicken breasts. The meat of thighs is tenderer but requires more about the cutting skills.",30 min,1820–1886,mild,10,381,500,https://i.pinimg.com/564x/a3/a2/9d/a3a29d137155e0e23ff3301c48c5dc99.jpg,
+7.Fry until the sauce is well coated. Mix with the remaining leek onion white sections and fried peanuts. Transfer out immediately and serve with rice!","The name of Kung Pao comes from a court official Ding Baozhen in Qing dynasty. The hero official Ding is a foodie who especially loves stir-fried diced chicken. During the time of being served as governor in Sichuan province, he frequently treats his guest with this dish and add dried chili peppers because People in Sichuan loves to eat hot chili. Later on, he is granted the title Taizi Shaobao also known as Kung Pao, which means the protector of the crown price. People name this dish after him to memory him.In China, chefs usually use chicken thighs to make this dish rather than boneless chicken breasts. The meat of thighs is tenderer but requires more about the cutting skills.",30 mins,1820-1886,mild,10,381,500,https://i.pinimg.com/564x/a3/a2/9d/a3a29d137155e0e23ff3301c48c5dc99.jpg,,My Cookbook
 Mapo Toufu,English,Sichuan,"1. Add a small pinch of salt and sesame oil to minced beef. Mix well and set aside.
 
 2. Mix 1 tablespoon of cornstarch with 2 and 1/2 tablespoons of water in a small bowl to make water starch.
@@ -39,7 +39,7 @@ Mapo Toufu,English,Sichuan,"1. Add a small pinch of salt and sesame oil to mince
 8. Transfer out when almost all the seasonings stick to tofu cubes. Sprinkle Szechuan peppercorn powder (to taste)and chopped garlic greens if using.
 
 9. Serve with rice!","The origin of mapo tofu can be traced to 1862 during the Qing Dynasty (1644-1911) and to a couple surnamed Chen, who ran Chen Xingsheng Restaurant, a small eatery near Wanfu Bridge in north Chengdu. Unpleasantly, the mapo comes from the pock-marked face of Mrs Chen - ma meaning pock, po meaning elderly woman. Oil porters crossing the bridge would use their stock to save money and ask the Chen restaurant to make them something nice.
-Chen Mapo, as she came to be known, had her own unique way of cooking tofu, famous for its pleasant look, smell and taste. Chengdu Records, published in 1909, shows the restaurant's name was eventually changed to Chen Mapo Tofu Restaurant and listed as one of the 23 most famous restaurants in Chengdu in the late Qing Dynasty. Its flavor, price and suitability with rice meant mapo tofu became a Chinese food staple, spreading nationwide.",30 min,1644-1911,mild,20,377,400,https://i.pinimg.com/564x/a7/78/0d/a7780dba7cffd718b1594deb389e8ed9.jpg,
+Chen Mapo, as she came to be known, had her own unique way of cooking tofu, famous for its pleasant look, smell and taste. Chengdu Records, published in 1909, shows the restaurant's name was eventually changed to Chen Mapo Tofu Restaurant and listed as one of the 23 most famous restaurants in Chengdu in the late Qing Dynasty. Its flavor, price and suitability with rice meant mapo tofu became a Chinese food staple, spreading nationwide.",30 mins,1644-1911,mild,20,377,400,https://i.pinimg.com/564x/a7/78/0d/a7780dba7cffd718b1594deb389e8ed9.jpg,,My Cookbook
 Yuxiang Shredded Pork,English,Sichuan,"Mix sauce for stir fry:
 -- 1½ tablespoons rice vinegar
 -- 1½ tablespoons sugar
@@ -75,7 +75,7 @@ Marinade pork
 
 It is said that, many years ago, a family liked eating fish very much and they were particular with the seasoning. They always put some green onion, ginger, garlic, soy, vinegar, wine and so on when they cook fish. One day, the wife put the remaining seasoning from last night into the food because she did not want to waste the seasoning. She at first thought her husband would not like it, but unexpectedly, he liked it very much.
 
-Later, this food was improved by many Sichuan people. Other dishes using yuxiang have also appeared in Sichuan menus, for example, as yuxiang pork liver, yuxiang eggplant, and yuxiang three silk (魚香三絲).",30 min,recent decades,mild,20,325,677,https://i.pinimg.com/564x/bd/46/b4/bd46b459dc5b466ec9fccb0be4626861.jpg,
+Later, this food was improved by many Sichuan people. Other dishes using yuxiang have also appeared in Sichuan menus, for example, as yuxiang pork liver, yuxiang eggplant, and yuxiang three silk (魚香三絲).",30 mins,recent decades,mild,20,325,677,https://i.pinimg.com/564x/bd/46/b4/bd46b459dc5b466ec9fccb0be4626861.jpg,,My Cookbook
 Suan Cai Yu,English,Sichuan,"1. Wash the fish carefully and separate the bones and fish fillet. Then slice the fillet into really thin slices and cut the bones into large sections.
 
 2. In a large bowl with clean water, soak and wash the fish slices until they become almost transparent. Transfer out and drain.
@@ -94,7 +94,7 @@ pickled mustard green for another minute. Pour around 2L of fresh cold water, si
 
 8. Garnish some chopped green onion and serve hot!","Suan Cai Yu is a lesser known (but definitely not less delicious!) Sichuan dish that features a hot and sour broth with super tender fish slices.
 
-Suan Cai Yu (酸菜鱼) can be translated as “hot and sour fish with pickled mustard greens”. The fish is thinly sliced and poached in a rich broth made from chicken stock, fish stock, and Sichuan pickles. The fish has a velvety and silky texture, with a piquant and zesty taste. It is a great dinner dish that you will find really comforting and satisfying on a chilly day.",40 min,N/A,hot,10,307,455,https://i.pinimg.com/564x/57/36/bb/5736bb012217797f52d45c66bf5e64f6.jpg,
+Suan Cai Yu (酸菜鱼) can be translated as “hot and sour fish with pickled mustard greens”. The fish is thinly sliced and poached in a rich broth made from chicken stock, fish stock, and Sichuan pickles. The fish has a velvety and silky texture, with a piquant and zesty taste. It is a great dinner dish that you will find really comforting and satisfying on a chilly day.",40 mins,N/A,hot,10,307,455,https://i.pinimg.com/564x/57/36/bb/5736bb012217797f52d45c66bf5e64f6.jpg,,My Cookbook
 Dry Fried Green Beans,English,Sichuan,"1. Cap the fresh green beans; Wash and drain.
 
 2. Heat your wok over high heat until just starting to smoke, and add the green beans and salt. Immediately lower the heat to medium low, and sear the green beans for about 20 minutes, stirring occasionally. You want to see small scorch marks on the green beans. Once the beans are somewhat tender, take them out of the wok and set aside.
@@ -111,7 +111,7 @@ Dry Fried Green Beans,English,Sichuan,"1. Cap the fresh green beans; Wash and dr
 
 8. Serve hot! Enjoy!","Sichuan Dry Fried Green Beans are a very popular dish both in China and US, as Sichuan cuisine becomes more prevalent. This dish is also known as Szechuan dry-fried green beans of Chinese stir-fried green beans but if the restaurant is any good, they are prepared using the same method and quite tasty.
 
-Deep-frying makes a healthy ingredient very unhealthy. However, when you think about the name of the dish in Chinese, 干煸四季豆(ganbian sijidou), it literally means “dry seared.” So rather than deep-frying the green beans (a method used in restaurants because it’s a faster process), I did just that—seared them in a dry wok without oil. The outcome was brilliant.",30 min,N/A,mild,0,334,684,https://i.pinimg.com/564x/9a/37/e6/9a37e680c137cbe1c3727cc32f768494.jpg,
+Deep-frying makes a healthy ingredient very unhealthy. However, when you think about the name of the dish in Chinese, 干煸四季豆(ganbian sijidou), it literally means “dry seared.” So rather than deep-frying the green beans (a method used in restaurants because it’s a faster process), I did just that—seared them in a dry wok without oil. The outcome was brilliant.",30 mins,N/A,mild,0,334,684,https://i.pinimg.com/564x/9a/37/e6/9a37e680c137cbe1c3727cc32f768494.jpg,,My Cookbook
 Spicy Chicken,English,Sichuan,"Marinating
 -- 1 tbsp. soy sauce
 -- 1 tbsp. rice wine
@@ -129,10 +129,140 @@ Spicy Chicken,English,Sichuan,"Marinating
 
 5.Push the spices to one side and add 1/2 tablespoon of oil in wok and fry ginger, scallion white and garlic until aromatic.
 
-6.Return the chicken cubes, add roasted white sesame seeds, sugar, salt and scallion green sections. Mix well and serve immediately.
-
-","In Chinese, we call the dish La-zi-ji, which mainly mean dried chili pepper chicken. Some restaurants may call it Chongqing Chicken since it is thought to be quite popular in Geleshan (歌乐山) area in the city of Chongqing.
+6.Return the chicken cubes, add roasted white sesame seeds, sugar, salt and scallion green sections. Mix well and serve immediately.","In Chinese, we call the dish La-zi-ji, which mainly mean dried chili pepper chicken. Some restaurants may call it Chongqing Chicken since it is thought to be quite popular in Geleshan (歌乐山) area in the city of Chongqing.
 
 you might not have dared touch it for fear of burning a hole through your mouth. All those chili peppers can be intimidating, but I promise it is not as spicy as it looks, and you will love it to death!
 
-Laziji originated near Geleshan in Chongqing, where restaurateurs used small free-range chickens from nearby farms. This poultry became a signature export for Geleshan.",40 min,N/A,hot,10,220,745,https://i.pinimg.com/564x/86/01/c1/8601c12c00f1c1791467dc9fe1032675.jpg,
+Laziji originated near Geleshan in Chongqing, where restaurateurs used small free-range chickens from nearby farms. This poultry became a signature export for Geleshan.",40 mins,N/A,hot,10,220,745,https://i.pinimg.com/564x/86/01/c1/8601c12c00f1c1791467dc9fe1032675.jpg,,My Cookbook
+Yangzhou Fried Rice,English,Jiangsu,"1. Slightly separate the grains of rice via slightly pressing the rice by a rice scoop. This step is optional but highly recommended for beginners.
+
+2. Heat up around 1 tablespoon of cooking oil in wok and fry green beans and diced carrots until softened.
+
+3. Heat up 1 tablespoon of cooking oil in a wok or a nonstick skillet (Note 2) and fry shrimp until slightly seared. Transfer out.
+
+4. Play rice in wok and dig a small hole in center, add the remaining 1 tablespoon of cooking oil and pour in beaten egg . Give a quick stir so the egg and rice can be mixed well quickly.
+
+5. Add green beans, carrots, ham and shrimp, light soy sauce, sprinkle pinch of salt and white pepper. Give everything a big stir-fry and mix well. Then add green onion and fry for another 30 seconds.","Fired rice (炒饭) and chow mein (炒面) possibly are the two most popular types of dishes based on staple foods of China—rice and noodles. Home-style fried rice can be as humble as basic egg fried rice or as luxury as this Yangzhou fried rice, a star throughout the country. The best tool for perfect fried rice is a wok, in which you can quickly move all the grains. Along with the movement, the grains are well separated while all the other ingredients and seasonings are well mixed. Honestly, Chinese people have a clinging attitude about their food, especially the food from the hometowns. Basically rice is almost all-purpose for vegetables and meats. So you can add whatever in your kitchen to a bowl of leftover rice and make yourself a happy breakfast. But people in Jiangshu province insist that a real Yangzhou fried rice should at least includes egg, carrot, green peas, Chinese ham, shrimp and green onion. Those ingredients not only bring different tastes and textures, but more importantly different colors. The colorful fried rice is the most popular choice for children meal for lots of restaurants.",10 mins,N/A,mild,10,473,6743,https://steamykitchen.com/wp-content/uploads/2016/10/yangzhou-fried-rice-recipe-062.jpg,,My Cookbook
+Nanjing Salted Duck,English,Jiangsu,"1. Rinse the duck thoroughly under cold water, discarding any of the giblets that came with it. Soak it in cold water for an hour to get rid of any impurities.
+
+2. In the meantime, add the salt and Sichuan peppercorns to a flat-bottomed pan over medium heat. Dry roast them by stirring constantly for 5-8 minutes until the salt turns slightly yellow. Turn off the heat and let cool. Be sure not to burn the Sichuan peppercorns.
+
+3. Drain the duck from the water and thoroughly pat it dry with paper towels, inside and out. Rub the salt and Sichuan peppercorns all over the duck, inside and out. Use all of the mixture, making sure that you use at least ⅓ for the cavity. Let the duck marinate, uncovered, for three hours in the refrigerator.
+
+4.While the duck is marinating, you can prepare your spice pouch. Place the star anise, cumin seeds, bay leaves, cinnamon, and peppercorns on a square of cheesecloth and tie tightly with kitchen twine. Set aside.
+
+5. Next, prepare a pot that is big enough to cook the duck whole. Fill it with 12-15 cups of water, enough to submerge the whole duck. Add the spice pouch along with the ginger and scallion. Bring the pot of water to a boil, and add the Shaoxing wine. Simmer over low heat.
+
+6. Once the duck is finished marinating, carefully lower it (along with all the salt and Sichuan peppercorns used to marinate it) in the prepared pot. Bring to a boil. Once boiling, carefully lift the duck out of the water in order to drain the water that has accumulated in the cavity; then lower it back into the pot, and bring the water to a boil again. This ensures there is no cold water trapped inside the cavity of the duck.
+
+7. Immediately turn the heat down to a simmer, cover, and let cook for 15 minutes. During these 15 minutes, the water should be hot and simmering slightly, but it shouldn't be at a full boil. After 15 minutes, turn off the heat and let the pot sit, covered, for 40–45 minutes. Once the 40-45 minutes has passed, transfer the duck to a cutting board. Lightly brush the outside of the duck with sesame oil and let it cool completely before cutting and serving.","Nanjing Salted Duck (Chinese: 盐水鸭) is a local duck dish from Nanjing, China.The history of the dish goes back hundreds of years, possibly to the 14th century, but it grew more famous during the Qing Dynasty. The tender white duckmeat has some fat but is not greasy, and in presentation the dish is fragrant and often crispy. Nanjing Salted Duck prepared shortly before or after mid-Autumn is reputed to taste the best, because of duck production during the sweet osmanthus blooming season (osmanthus may be added to the spice mixture particularly in those months). Sometimes the seasonal version of the dish is called Osmanthus Duck.",40 mins,1500,mild,0,600,130,https://thewoksoflife.com/wp-content/uploads/2015/07/nanjing-salted-duck-3.jpg,,My Cookbook
+Squirrel Mandarin Fish,English,Jiangsu,"1. prepare ingredients, clean and cut fish.
+
+
+2. marinate in salt and cooking wine for 5 minutes.
+
+
+3. absorb the water. cut the fish into the diamond shape. do not cut off.
+
+
+4. coat with starch evenly and shake off the excess starch.
+
+
+5. heat oil and fry the fish.
+
+
+6. pour some hot oil on fish, make sure fry the fish evenly to slight golden colour. transfer out and drain the oil. if you like golden colour, you could fry it again.
+
+
+7. fry the fish head.
+
+
+8. put the fish on a plate.
+
+
+9. heat oil, put minced garlic and stir-fry, add ketchup and sugar.
+
+
+10. add broth, soy sauce, cooking wine and vinegar. mix starch with water and add into the sauce after boiling.
+
+
+11. pour onto the fish. decorate with some pine nuts and shredded spring onion. ","The dish’s history can be traced back to the Qing Dynasty, during the rule of Emperor Qianlong. According to popular retelling, the emperor once came upon an energetic carp on his extensive tour around Jiangsu and ordered it to be cooked at once. Instead of serving it flat on a plate, the chef used a little ingenuity – and a lot of hot oil – to give the fish its animated, squirrel-like shape in order to reflect the liveliness that so bemused the emperor. Others, however, say its name draws from more literal origins, namely, the squirrel-like squeaks that the fish meat emits when bathed in hot oil. (Some suggest it got the name simply because the dish is usually served with fresh pine nuts)",30 mins,1711-1799,mild,60,540,344,https://cdn-images-1.medium.com/max/2400/1*LzuRE_JanC0nSRL_faMXzA.jpeg,,My Cookbook
+Lion's Head,English,Jiangsu,"1. Add ground pork into a large bowl. Add 4 tablespoons water. Mix well with a spatula until water is fully incorporated.
+
+2. Add Shaoxing wine, light soy sauce, dark soy sauce, salt, sugar, grated ginger, cornstarch, and scallion. Mix well.
+
+3. Add chestnuts and eggs. Mix a few times.
+
+4. Add panko. Mix well. Add sesame oil, mix until it forms a soft paste.
+
+5. Heat peanut oil in a nonstick skillet over medium heat until warm.
+
+6.Use bare hands to scoop about 1/3 cup of the paste and shape it into a meatbal. The meatball should be a bit runny, barely able to hold its shape (so the finished meatballs will be tender and juicy). If the meatballs cannot hold their shape, add a bit more panko and mix again. If the meatballs are still a bit tough, blend in more water and mix well, 1 tablespoon at a time, until the paste turns soft.
+
+7. Carefully place 3 to 4 meatballs in the skillet and make sure to leave enough space to flip them. When the bottom side is just set, carefully roll the ball with a spatula to cook the other sides. Continue to do this until all sides are set and browned. Transfer to a plate. Continue to brown the rest of the meatballs.
+
+8. Add water to a steamer and place the plate of meatballs on the steaming rack.
+
+9. Heat the steamer over medium high heat, covered, until the water begins to boil. Turn to medium heat. Cook covered until the meatballs are cooked through, in 40 minutes.
+
+10. Cook the second batch by using the same method. After cooking the first batch, check the water level and add more if it runs too low.
+
+11. Serve warm over steamed rice as a main.","Lion's Head (simplified Chinese: 狮子头; traditional Chinese: 獅子頭; pinyin: Shīzitóu) or stewed meatball is a dish from the Huaiyang cuisine of eastern China, consisting of large pork meatballsstewed with vegetables. There are two varieties: white (or plain), and red (红烧, cooked with soy sauce). The plain variety is usually stewed or steamed with napa cabbage. The red variety can be stewed with cabbage or cooked with bamboo shoots and tofu derivatives. The minced meat rich in fat is more likely to bring better texture, addition of chopped water chestnut also works.
+The name ""lion's head"", derives from the shape of the meatball which is supposed to resemble the head of the Chinese guardian lion, specifically.
+The dish originated in Yangzhou and Zhenjiang, to a lesser degree, Huai'an. While the plain variety more common in Yangzhou and the red variety more common in Zhenjiang. The dish became a part of Shanghai cuisine with the influx of migrants in the 19th and early 20th century.",1 hr 30 mins,1800-1900,mild,40,800,500,https://omnivorescookbook.com/wp-content/uploads/2015/07/1506_Chinese-Lions-Head-Pork-Meatballs_001.jpg,,My Cookbook
+Steamed Soup Dumplings,English,Jiangsu,"For the Pork Jelly
+1. In a pot, add cold water and pork rinds to cook for around 5 minutes after boiling until the pork skin becomes slightly transparent. Transfer the pork rind out and rinse in running water. Remove impurities and fat layer. Cut the pork rind into small strips.
+
+2. In a high pressure cooker or pot, add enough water to cover the pork rinds. Add 4 slices of ginger and several green onion sections. Cook for at least 40 minutes for high pressure cooker and at least one and half hour for ordinary cooker. Leave the soup to cool down. Use food processor to blend for seconds. And then filter the soup once. Pour into an airtight container and refrigerate overnight.
+
+For the Filling
+1. In a small bowl, soak minced ginger and green onion with 1/2 cup hot water for around 10 minutes.
+
+2. In a larger mixing bowl, mix the ginger and green onion water prepared in step 1 by three batches. Use your hand to stir in one direction until the water is completely absorbed by the minced pork.
+
+3. Then add all the seasonings. Mix well and set aside for around 10 minutes for a better absorption.
+
+4. Mince the pork jelly and mix with the ground pork filling.
+
+For the wrappers
+1. Add flour and water in a mixing bowl and then knead the dough until smooth and stretchy (this process may need 15 to 20 minutes depending on your kneading skill. You can also use a mixer to do this job.) Cover with a wet cloth and reset for 20 minutes. Dust your board and re-knead the dough for around 5 minutes and then further roll into a long log. Cut the log into small sections of similar weight. Press the sections and roll out to a round wrapper. During the process, do remember to cover everything under a wet cloth to avoid drying out.
+
+2. Prepare your bamboo steamer; cover the steamer with cloth, zongzi leaves or brushing some oil on the surface so that the dumplings will not be sticky to the steamer.
+
+3. Assemble the soup dumplings one by one like this direction. But remember to seal the hole at the very last step. Place the dumpling on the steamer. Remember to leave some spaces between each other.
+
+Steaming process
+1. Set up the steamer and steam for around 8 to 10 minutes after the water is boiling.
+
+2. Serve directly or with Chinese black vinegar.
+","Xiao Long Bao (Chinese steamed soup dumplings) is a famous Chinese dessert. Sometimes you may hear Shanghai Xiao Long Bao, but like Beijing style Zha Jiang Mian, this soup dumpling can be found in many Chinese cuisines. Xiao Long Bao recipe might differ from one cuisine to another. However Shanghai style is the most dedicate and elegant version.
+
+Its origins are somewhat debatable as everyone wants to lay claim to such a popular dish, but most agree that the story begins around 1875 in the Shanghai suburb of Nanxiang. A man named Huang Mingxian decided he could attract customers to his restaurant by creating a surprising new dumpling.
+
+To create the soupy interior, he added aspic to his pork mince so that, upon steaming, the aspic would liquefy and fill the dumpling with soup from the inside. The thin dough wrapper had to be pleated exactly 14 times, creating a small, circular cinching at the top. To steam, the dumplings were placed in a round bamboo basket. Huang would call the dish Nanxiang da rou mantou, which roughly translates to Nanxiang large meat bun. He figured that the actually petite size of the dish would make it memorable and create loyal fans.
+
+Huang was right.
+
+People began flocking to his restaurant from all over, taken with the novelty. As more and more people tried the dish, the name morphed into a more appropriate one, and thus Xiao (small) Long (basket) Bao (bun) were born.",1 hr,1875,mild,0,230,5500,https://chinasichuanfood.com/wp-content/uploads/2014/09/xiao-long-bao-26.jpg,,My Cookbook
+Duck Blood and Vermicelli Soup,English,Jiangsu,N/A,"Duck blood and vermicelli soup is a traditional delicacy in Nanjing. It is said that once there was a poor man in Nanjing. He killed a duck and used a bowl to hold the duck’s blood, but accidentally dropped some vermicelli into the bowl. He cooked them together and surprisingly found that the soup was delicious. A rich man heard the story and employed the poor man to cook the dish for his family. The soup has been popular ever since.",30 mins,N/A,medium,0,450,30,https://i.pinimg.com/564x/69/ec/66/69ec660a3743baf1d96597e71fba0615.jpg,,My Cookbook
+Braised Shredded Dried Tofu,English,Jiangsu,"1. Cut the tofu into julienne strips. If you prefer, you can buy pre-shredded tofu at the market. Using a sieve, immerse tofu in a pot of boiling water for one minute. Remove, drain, then submerge another minute. Drain.
+
+2. Heat a wok and add oil. Stir-fry shrimp until fully cooked. Set aside.
+
+3. Pour chicken broth into a pot. Place tofu shreds on one side, and chicken, ham, shrimp eggs and bamboo shoots on the other side. Bring to a boil and simmer for 15 minutes until soup is thick. Sprinkle evenly with salt and cover. Simmer 5 more minutes. 
+
+4. Place tofu in the bottom of a serving bowl and pile with items on the other side of the pot. Top with shrimp and pea sprouts and pour broth into bowl. Serve immediately.","Dazhu gansi (simplified Chinese: 大煮干丝; traditional Chinese: 大煮乾絲; pinyin: dàzhǔ gānsī) is a specialty dish of Huaiyang cuisine. Dried tofu is sliced into matchsticks and served in chicken stock. Many other ingredients can be added to the tofu. As tofu does not have much flavor, the chef is challenged to produce knifework of great precision (a hallmark of Huaiyang cuisine) and a broth of the highest quality. It is said to have been created in Yangzhou for the Qianlong emperor.",25 mins,1711-1799,mild,0,340,121,https://i.pinimg.com/564x/97/0e/f0/970ef066e80c7d8dcaf582975b84b968.jpg,,My Cookbook
+General Tso's Chicken,English,Others,"1. In a medium bowl, combine the chicken, 2 tablespoons soy sauce, 3 tablespoons cornstarch and egg white. Toss to combine and set aside while you chop the vegetables.
+
+2. Mince the garlic and ginger and chop the scallions. Separate the scallion whites from the greens and set aside greens for garnish.
+
+3. Heat a small sauce pot over medium heat. Add 1 teaspoon of sesame oil, ginger, garlic and scallion whites. Sauté for 1 minute. Add the chicken broth, remaining 2 tablespoons soy sauce, sriracha, and hoisin and whisk to combine. Add the remaining 1 tablespoon cornstarch and whisk sauce until starting to thicken, about 2 minutes. Once thickened, turn heat to low and keep warm while you make the chicken.
+
+4. Heat a large wok or non-stick skillet over medium-high heat. In two batches to prevent sticking, add 1/2 tablespoon of sesame oil then half of the chicken pieces. Cook chicken for 3-4 minutes, or until browned on the edges. Flip chicken and cook an additional 2-3 minutes, or until cooked through. Set aside on a plate and add the remaining oil and chicken as directed.
+
+5. Return the chicken back to the skillet or wok, add the sauce to the skillet and toss to coat. Sprinkle with scallion greens and sesame seeds. Serve immediately with extra sriracha, if desired.
+","General Tso's chicken (pronounced [tswò]) is a sweet deep-fried chicken dish that is served in North American Chinese restaurants (it is also seen with other variants, such as General Tse's chicken). The dish is named after Zuo Zongtang (also romanized Tso Tsung-t'ang), a Qing dynasty statesman and military leader, although there is no recorded connection to him nor is the dish known in Hunan, Zuo's home province.
+
+The dish has been associated with Zuo Zongtang (Tso Tsung-t'ang) (1812–1885), a Qing dynasty statesman and military leader from Hunan Province, but Zuo could not have eaten the dish or known of it.[2] The dish is found neither in Changsha, the capital of Hunan Province, nor in Xiangyin County, where Zuo was born. Moreover, Zuo's descendants, who are still living in Xiangyin County, when interviewed, say that they have never heard of such a dish.
+
+There are several stories concerning the origin of the dish. Eileen Yin-Fei Lo states in her book The Chinese Kitchen that the dish originates from a simple Hunan chicken dish and that the reference to ""Zongtang"" was not a reference to Zuo Zongtang's given name, but rather a reference to the homonym ""zongtang"", meaning ""ancestral meeting hall"".[4] Consistent with this interpretation, the dish name is sometimes (but considerably less commonly) found in Chinese as 左宗棠雞 (Chung tong gai is transliterated from Jyutping[citation needed]; Zuǒ Zōngtáng jī is transliterated from Hanyu Pinyin).",20 mins,1910,mild,60,634,5454,https://www.skinnytaste.com/wp-content/uploads/2018/04/General-Tsos-Chicken-1-6.jpg,,My Cookbook

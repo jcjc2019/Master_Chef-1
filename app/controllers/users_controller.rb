@@ -24,24 +24,19 @@ class UsersController < ApplicationController
     def show
         @user = current_user
     end      
-
-=begin   
-    def current_user
-        User.find(session[:current_user_id]) if(session[:current_user_id])
-    end
-
+  
     def index
        @users = User.all
     end
 
-    def show
-        @user = current_user if(current_user)
-    end
+    # # def show
+    # #     @user = current_user if(current_user)
+    # # end
 
-    def new 
-        @errors = flash[:errors] || {}
-        @user = User.new(user_params[:user])
-    end
+    # def new 
+    #     @errors = flash[:errors] || {}
+    #     @user = User.new(user_params[:user])
+    # end
 
 
     def edit
@@ -68,7 +63,11 @@ class UsersController < ApplicationController
         #redirect to login page
         redirect_to '/sessions'
     end
-=end
+
+    # def import
+    #     User.my_import(params[:file])
+    # end
+
     private
 
     def user_params

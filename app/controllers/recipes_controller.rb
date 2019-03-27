@@ -58,6 +58,6 @@ class RecipesController < ApplicationController
     private
 
     def recipe_params
-        params.permit(recipe:[:name, :language, :region, :instructions, :history, :comment, :cook_time, :origin_century, :spicy_level, :sugar_level, :calories, :likes, :img_url])
+        params.permit(recipe:[:name, :language, :region, :instructions, :history, :comment, :cook_time, :origin_century, :spicy_level, :sugar_level, :calories, :likes, :img_url, :ingredient_list, :ingredient, {ingredient_ids:[]}, :ingredient_ids])
     end
 end
