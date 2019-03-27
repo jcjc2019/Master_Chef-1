@@ -1,3 +1,4 @@
+<p>
 <h2 class = "text-center"><%= @recipe.name %></h2>
 
 <ul>
@@ -61,6 +62,25 @@
 </div>
 </tr>
 
+
+<tr>
+<p>Ingredients </p>
+<p>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ingredients" aria-expanded="false" aria-controls="ingredients">
+    Show Details
+  </button>
+
+</p>
+
+<div class="collapse" id="ingredients">
+  <div class="card card-body">
+    <% @recipe.ingredients.each do | ingredient | %>
+      <p><%= ingredient.name %>
+    <%end%>
+  </div>
+</div>
+</tr>
+
 <tr>
   <p>Language of the Recipe: </p>
     <%= @recipe.language %>
@@ -68,8 +88,9 @@
 
 <tr>
   <%= form_with(method: 'patch', url: "/recipes/#{@recipe.id}/add_likes") do |f|%>
-      <%= f.submit "Like ", class: "btn btn-success"%>
+      <%= f.submit "Like this!", class: "btn btn-danger"%> 
   <%end%>
+  <%= @recipe.likes%>
 </tr>
 
 </table>

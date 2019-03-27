@@ -18,7 +18,7 @@
 
   
   <div class="container">
-    <nav class="nav nav-pills nav-fill navbar-fixed-top">
+    <nav class="nav nav-pills nav-fill sticky-top">
       <a class="navbar-brand" href="/sessions">MasterChef</a>
 
       <li class="nav-item-active">
@@ -49,4 +49,13 @@
   </div>
 
   </body>
+
+<script>
+  $(document).on('ready page:load', function () {
+    $('#recipe_ingredient_ids').chosen({
+      allow_single_deselect: true,
+      width: '100%'
+    })
+  });
+</script>
 </html>

@@ -40,7 +40,11 @@ gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 gem 'jquery-rails'
 gem 'sdoc', '~> 0.4.1', group: :doc
+gem 'activerecord-import'
+gem 'csv'
 
+gem 'rails-assets-tether', source: 'https://rails-assets.org'
+gem 'rails-assets-chosen', source: 'https://rails-assets.org'
 
 
 group :development, :test do

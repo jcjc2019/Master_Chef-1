@@ -3,7 +3,8 @@
 <ul>
 
   <% @recipes.each do |recipe| %>
-    <li><%= link_to "#{recipe.name}", recipe_path(recipe)%></li>
+    <li><%= link_to "#{recipe.name}", recipe_path(recipe)%>  <%= recipe.likes%> Liked</li>
+    <p><small>Ingredients: <%= raw recipe.ingredients.map(&:name).map { |i| link_to i, ingredient_path(i) }.join(', ') %></small></p>
   <% end %>
 
 </ul>

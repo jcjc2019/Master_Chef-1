@@ -1,3 +1,5 @@
+require 'csv'
+require 'activerecord-import'
 require_relative '../config/environment'
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
@@ -74,3 +76,53 @@ zoe.hash_password
 zoe.save
 
 
+chicken = Ingredient.create(name: "Chicken", description: "Chicken meat.")
+pork = Ingredient.create(name: "Pork", description: "Pork meat.")
+fish = Ingredient.create(name: "Fish", description: "Fish meat.")
+tofu = Ingredient.create(name: "Tofu", description: "Pork meat", origin_country: "China")
+
+
+class Rectable
+  def initialize()
+    @csv = CSV.new(File.read(File.join(File.dirname(__FILE__),"../db/recipes.csv")), encoding: 'ISO-8859-1', headers: true)
+  end
+
+  def seed
+    @csv.map do |row|
+      row = row.to_hash
+      #create tables for recipes
+
+      recipe = Recipe.create({ 
+          name: row['name'], 
+          language: row['language'], 
+          region: row['region'], 
+          instructions: row['instructions'], 
+          history: row['history'],
+          cook_time: row['cook_time'],
+          origin_century: row['origin_century'],
+          spicy_level: row['spicy_level'],
+          sugar_level: row['sugar_level'],
+          calories: row['calories'],
+          likes: row['likes'],
+          img_url: row['img_url'],
+          comment: row['comment'] })
+
+#create join table by grab previous tables' ids and second table's ids
+
+      cook_book = CookBook.create({
+            name: row['cookbook_name'],
+            recipe_id: recipe.id})
+            # user_id: user.id
+
+    #   ingredient = Ingredient.find_or_create_by({
+    #       name: row['ingredient_name'],
+    #       description: row['ingredient_description'],
+    #       origin_century: row['ingredient_origin_country']
+    #   })
+
+
+    end
+end
+end
+
+Rectable.new().seed

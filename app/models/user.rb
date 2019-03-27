@@ -1,4 +1,4 @@
-require 'csv'
+
 class User < ApplicationRecord    
     has_many :cook_books
     has_many :recipes, through: :cook_books
@@ -24,6 +24,15 @@ class User < ApplicationRecord
         return self.password_digest = BCrypt::Password.create(password)
      end
    end
-   
+
+  
+    # def self.my_import(file)
+    #     users = []
+    #     CSV.foreach(file, :headers => true) do |row|
+    #         User.create!(row.to_hash)
+    #     end
+    #     User.import users, recursive: true
+    # end
+      
 end
     

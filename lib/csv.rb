@@ -10,7 +10,6 @@ class Csv
       #create tables for all classes
       user = User.find_or_create_by({ 
           username: row['username'], 
-          password: row['password'],
           translator: row['translator']})
 
       recipe = Recipe.find_or_create_by({ 
@@ -33,17 +32,17 @@ class Csv
           recipe_id: recipe.id,
           user_id: user.id})
 
-      ingredient = Ingredient.find_or_create_by({
-          name: row['ingredient_name'],
-          description: row['ingredient_description'],
-          origin_century: row['ingredient_origin_country']
-      })
+      # ingredient = Ingredient.find_or_create_by({
+      #     name: row['ingredient_name'],
+      #     description: row['ingredient_description'],
+      #     origin_century: row['ingredient_origin_country']
+      # })
 
-      #create join table by grab previous tables' ids and second table's ids
+      # #create join table by grab previous tables' ids and second table's ids
 
-      RecipeIngredient.create({
-          recipe_id: recipe.id, 
-          ingredient_id: ingredient.id})
+      # RecipeIngredient.create({
+      #     recipe_id: recipe.id, 
+      #     ingredient_id: ingredient.id})
     end
   end
 end
