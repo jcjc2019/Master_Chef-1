@@ -1,6 +1,30 @@
 class UsersController < ApplicationController
-    # skip_before_action :authenticate, only:[:new, :create]
+    #skip_before_action :authenticate, only:[:new, :create]
 
+    def new #display sign up form
+        @user = User.new
+    end
+
+    def index
+        @users = User.all
+    end
+    def create #sign up action
+        @user = User.new(user_params)
+        if @user.valid?
+           if @user.save
+            session[:user_id] = @user.id  # so when you create a new user, they will be automatically singed in 
+            redirect_to @user
+           end
+        else
+            render :new
+        end 
+    end
+
+    def show
+        @user = current_user
+    end
+
+=begin   
     def current_user
         User.find(session[:current_user_id]) if(session[:current_user_id])
     end
@@ -18,17 +42,6 @@ class UsersController < ApplicationController
         @user = User.new(user_params[:user])
     end
 
-    def create
-        @user = User.new(user_params[:user])
- 
-        if @user.valid?
-            @user.save
-            redirect_to @user
-        else
-            flash[:errors] = @user.errors.messages
-            render :new
-        end
-    end
 
     def edit
         @user = User.find(params[:id])
@@ -54,10 +67,12 @@ class UsersController < ApplicationController
         #redirect to login page
         redirect_to '/sessions'
     end
-
+=end
     private
 
     def user_params
-        params.permit(user:[:username, :password_digest, :translator])
+        params.require(:user).permit(:username, :password, :password_confirmation, :translator)
     end
+
+
 end

@@ -1,38 +1,26 @@
 <p>
 <h1 class="text-center">Welcome to MasterChef</h1>
-<%= form_for( :session, url: login_path ) do | form | %>
+<%= form_tag  url: new_session_path do  %>
     <ul>
-    <li>
     <div class="form-group"> 
-        <%= form.label "Username" %>
-        <% name_error_class = 'is-invalid' if(@errors["username"]) %> 
-        <%= form.text_field :username, class: "form-control #{name_error_class}" %>
-        <% (@errors["username"] || [] ).each do | message | %>
-            <span class="invalid-feedback"><%= message %></span>
-        <% end %>
-    </div>
-    </li>
-
-    <li>
+        <%= label_tag "Username" %>
+        <%= text_field_tag :username %>
+    </div> 
+  
     <div class="form-group">
-        <%= form.label "Password" %>
-        <%= form.password_field :password, class: "form-control #{ @errors["password"] ? 'is-invalid' : '' }" %>
-        <% (@errors["password"] || [] ).each do | message | %>
-            <span class="invalid-feedback"><%= message %></span>
-        <% end %>
+        <%= label_tag "Password" %>
+        <%= password_field_tag :password %>
+
     </div>
-    </li>
 
-    </ul>
 
-<ul>
 <div class="table-responsive">
 <table class="signup_login_table">
 
 <tr>
     <td>
     <div class="form-group">
-      <%= form.submit "Login", class: "btn btn-primary" %>
+      <%= submit_tag "Login", class: "btn btn-primary" %>
     </div>
     <%end%>
     </td>
