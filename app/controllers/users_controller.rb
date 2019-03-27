@@ -5,6 +5,9 @@ class UsersController < ApplicationController
         @user = User.new
     end
 
+    def index
+        @users = User.all
+    end
     def create #sign up action
         @user = User.new(user_params)
         @user.hash_password
