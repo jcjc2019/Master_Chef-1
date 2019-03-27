@@ -7,8 +7,70 @@ require_relative '../config/environment'
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-#User.destroy_all
+User.destroy_all
  
-user = User.new({ :username => "Adam Moran",  :password => "cookie", :translator => false })
-user.hash_password # calling the method in user model
-user.save
+adam = User.new({ :username => "Adam Moran",  :password => "Adam", :translator => false })
+adam.hash_password # calling the method in user model
+adam.save
+
+cory = User.new({ :username => "Cory Harper",  :password => "Cory", :translator => false })
+cory.hash_password 
+cory.save
+
+eli = User.new({ :username => "Eli Lauffenburger",  :password => "Eli", :translator => false })
+eli.hash_password 
+eli.save
+
+hema = User.new({ :username => "Hemalatha Murugan",  :password => "Hema", :translator => true })
+hema.hash_password 
+hema.save
+
+jack = User.new({ :username => "Jack Rotta",  :password => "Jack", :translator => false })
+jack.hash_password 
+jack.save
+
+jessica = User.new({ :username => "Jessica Brumfield",  :password => "Jessica", :translator => false })
+jessica.hash_password 
+jessica.save
+
+jing = User.new({ :username => "Jing Chen",  :password => "Jing", :translator => true })
+jing.hash_password 
+jing.save
+
+jose = User.new({ :username => "Josephine Yao",  :password => "Jose", :translator => true })
+jose.hash_password 
+jose.save
+
+mark = User.new({ :username => "Mark Pothecary",  :password => "Mark", :translator => false })
+mark.hash_password 
+mark.save
+
+olivia = User.new({ :username => "Olivia Auzenne",  :password => "Olivia", :translator => false })
+olivia.hash_password 
+olivia.save
+
+robert = User.new({ :username => "Robert Vidal",  :password => "Robert", :translator => false })
+robert.hash_password 
+robert.save
+
+rochell = User.new({ :username => "Rochell Flood",  :password => "Rochell", :translator => false })
+rochell.hash_password 
+rochell.save
+
+theo = User.new({ :username => "Theodore Kimana",  :password => "Theo", :translator => false })
+theo.hash_password 
+theo.save
+
+tom = User.new({ :username => "Thomas Hansen",  :password => "Tom", :translator => false })
+tom.hash_password 
+tom.save
+
+trey = User.new({ :username => "Trey Beauchamp",  :password => "Trey", :translator => false })
+trey.hash_password 
+trey.save
+
+zoe = User.new({ :username => "Zoe Bai",  :password => "Zoe", :translator => true })
+zoe.hash_password 
+zoe.save
+
+

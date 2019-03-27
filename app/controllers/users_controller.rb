@@ -7,11 +7,12 @@ class UsersController < ApplicationController
 
     def create #sign up action
         @user = User.new(user_params)
+        @user.hash_password
+        #byebug
         if @user.valid?
-           if @user.save
-            session[:user_id] = @user.id  # so when you create a new user, they will be automatically singed in 
-            redirect_to @user
-           end
+           @user.save    
+           session[:user_id] = @user.id   # so when you create a new user, they will be automatically singed in 
+           redirect_to @user
         else
             render :new
         end 
