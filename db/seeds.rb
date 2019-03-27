@@ -6,7 +6,7 @@ require_relative '../config/environment'
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+Recipe.destroy_all
 User.destroy_all
  
 adam = User.new({ :username => "Adam Moran",  :password => "Adam", :translator => false })

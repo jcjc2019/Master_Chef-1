@@ -1,4 +1,4 @@
-name,language,region,instructions,history,cook_time,origin_century,spicy_level,sugar_level,calories,likes,img_url,comment,cookbook_name,username,password,translator
+name,language,region,instructions,history,cook_time,origin_century,spicy_level,sugar_level,calories,likes,img_url,comment
 Kung Pao Chicken,English,Sichuan,"1. Make the stir fry sauce:
 -- ½ tablespoon dark soy sauce
 -- 1 tablespoon light soy sauce
@@ -21,7 +21,7 @@ Kung Pao Chicken,English,Sichuan,"1. Make the stir fry sauce:
 
 6.Add in the mixed sauce
 
-7.Fry until the sauce is well coated. Mix with the remaining leek onion white sections and fried peanuts. Transfer out immediately and serve with rice!","The name of Kung Pao comes from a court official Ding Baozhen in Qing dynasty. The hero official Ding is a foodie who especially loves stir-fried diced chicken. During the time of being served as governor in Sichuan province, he frequently treats his guest with this dish and add dried chili peppers because People in Sichuan loves to eat hot chili. Later on, he is granted the title Taizi Shaobao also known as Kung Pao, which means the protector of the crown price. People name this dish after him to memory him.In China, chefs usually use chicken thighs to make this dish rather than boneless chicken breasts. The meat of thighs is tenderer but requires more about the cutting skills.",30 mins,1820-1886,mild,10,381,500,https://i.pinimg.com/564x/a3/a2/9d/a3a29d137155e0e23ff3301c48c5dc99.jpg,,My Cookbook,Zoe,password,
+7.Fry until the sauce is well coated. Mix with the remaining leek onion white sections and fried peanuts. Transfer out immediately and serve with rice!","The name of Kung Pao comes from a court official Ding Baozhen in Qing dynasty. The hero official Ding is a foodie who especially loves stir-fried diced chicken. During the time of being served as governor in Sichuan province, he frequently treats his guest with this dish and add dried chili peppers because People in Sichuan loves to eat hot chili. Later on, he is granted the title Taizi Shaobao also known as Kung Pao, which means the protector of the crown price. People name this dish after him to memory him.In China, chefs usually use chicken thighs to make this dish rather than boneless chicken breasts. The meat of thighs is tenderer but requires more about the cutting skills.",30 min,1820–1886,mild,10,381,500,https://i.pinimg.com/564x/a3/a2/9d/a3a29d137155e0e23ff3301c48c5dc99.jpg,
 Mapo Toufu,English,Sichuan,"1. Add a small pinch of salt and sesame oil to minced beef. Mix well and set aside.
 
 2. Mix 1 tablespoon of cornstarch with 2 and 1/2 tablespoons of water in a small bowl to make water starch.
@@ -39,7 +39,7 @@ Mapo Toufu,English,Sichuan,"1. Add a small pinch of salt and sesame oil to mince
 8. Transfer out when almost all the seasonings stick to tofu cubes. Sprinkle Szechuan peppercorn powder (to taste)and chopped garlic greens if using.
 
 9. Serve with rice!","The origin of mapo tofu can be traced to 1862 during the Qing Dynasty (1644-1911) and to a couple surnamed Chen, who ran Chen Xingsheng Restaurant, a small eatery near Wanfu Bridge in north Chengdu. Unpleasantly, the mapo comes from the pock-marked face of Mrs Chen - ma meaning pock, po meaning elderly woman. Oil porters crossing the bridge would use their stock to save money and ask the Chen restaurant to make them something nice.
-Chen Mapo, as she came to be known, had her own unique way of cooking tofu, famous for its pleasant look, smell and taste. Chengdu Records, published in 1909, shows the restaurant's name was eventually changed to Chen Mapo Tofu Restaurant and listed as one of the 23 most famous restaurants in Chengdu in the late Qing Dynasty. Its flavor, price and suitability with rice meant mapo tofu became a Chinese food staple, spreading nationwide.",30 mins,1644-1911,mild,20,377,400,https://i.pinimg.com/564x/a7/78/0d/a7780dba7cffd718b1594deb389e8ed9.jpg,,My Cookbook,Zoe,password,
+Chen Mapo, as she came to be known, had her own unique way of cooking tofu, famous for its pleasant look, smell and taste. Chengdu Records, published in 1909, shows the restaurant's name was eventually changed to Chen Mapo Tofu Restaurant and listed as one of the 23 most famous restaurants in Chengdu in the late Qing Dynasty. Its flavor, price and suitability with rice meant mapo tofu became a Chinese food staple, spreading nationwide.",30 min,1644-1911,mild,20,377,400,https://i.pinimg.com/564x/a7/78/0d/a7780dba7cffd718b1594deb389e8ed9.jpg,
 Yuxiang Shredded Pork,English,Sichuan,"Mix sauce for stir fry:
 -- 1½ tablespoons rice vinegar
 -- 1½ tablespoons sugar
@@ -75,7 +75,7 @@ Marinade pork
 
 It is said that, many years ago, a family liked eating fish very much and they were particular with the seasoning. They always put some green onion, ginger, garlic, soy, vinegar, wine and so on when they cook fish. One day, the wife put the remaining seasoning from last night into the food because she did not want to waste the seasoning. She at first thought her husband would not like it, but unexpectedly, he liked it very much.
 
-Later, this food was improved by many Sichuan people. Other dishes using yuxiang have also appeared in Sichuan menus, for example, as yuxiang pork liver, yuxiang eggplant, and yuxiang three silk (魚香三絲).",30 mins,recent decades,mild,20,325,677,https://i.pinimg.com/564x/bd/46/b4/bd46b459dc5b466ec9fccb0be4626861.jpg,,My Cookbook,Zoe,password,
+Later, this food was improved by many Sichuan people. Other dishes using yuxiang have also appeared in Sichuan menus, for example, as yuxiang pork liver, yuxiang eggplant, and yuxiang three silk (魚香三絲).",30 min,recent decades,mild,20,325,677,https://i.pinimg.com/564x/bd/46/b4/bd46b459dc5b466ec9fccb0be4626861.jpg,
 Suan Cai Yu,English,Sichuan,"1. Wash the fish carefully and separate the bones and fish fillet. Then slice the fillet into really thin slices and cut the bones into large sections.
 
 2. In a large bowl with clean water, soak and wash the fish slices until they become almost transparent. Transfer out and drain.
@@ -94,7 +94,7 @@ pickled mustard green for another minute. Pour around 2L of fresh cold water, si
 
 8. Garnish some chopped green onion and serve hot!","Suan Cai Yu is a lesser known (but definitely not less delicious!) Sichuan dish that features a hot and sour broth with super tender fish slices.
 
-Suan Cai Yu (酸菜鱼) can be translated as “hot and sour fish with pickled mustard greens”. The fish is thinly sliced and poached in a rich broth made from chicken stock, fish stock, and Sichuan pickles. The fish has a velvety and silky texture, with a piquant and zesty taste. It is a great dinner dish that you will find really comforting and satisfying on a chilly day.",40 mins,N/A,hot,10,307,455,https://i.pinimg.com/564x/57/36/bb/5736bb012217797f52d45c66bf5e64f6.jpg,,My Cookbook,Zoe,password,
+Suan Cai Yu (酸菜鱼) can be translated as “hot and sour fish with pickled mustard greens”. The fish is thinly sliced and poached in a rich broth made from chicken stock, fish stock, and Sichuan pickles. The fish has a velvety and silky texture, with a piquant and zesty taste. It is a great dinner dish that you will find really comforting and satisfying on a chilly day.",40 min,N/A,hot,10,307,455,https://i.pinimg.com/564x/57/36/bb/5736bb012217797f52d45c66bf5e64f6.jpg,
 Dry Fried Green Beans,English,Sichuan,"1. Cap the fresh green beans; Wash and drain.
 
 2. Heat your wok over high heat until just starting to smoke, and add the green beans and salt. Immediately lower the heat to medium low, and sear the green beans for about 20 minutes, stirring occasionally. You want to see small scorch marks on the green beans. Once the beans are somewhat tender, take them out of the wok and set aside.
@@ -111,7 +111,7 @@ Dry Fried Green Beans,English,Sichuan,"1. Cap the fresh green beans; Wash and dr
 
 8. Serve hot! Enjoy!","Sichuan Dry Fried Green Beans are a very popular dish both in China and US, as Sichuan cuisine becomes more prevalent. This dish is also known as Szechuan dry-fried green beans of Chinese stir-fried green beans but if the restaurant is any good, they are prepared using the same method and quite tasty.
 
-Deep-frying makes a healthy ingredient very unhealthy. However, when you think about the name of the dish in Chinese, 干煸四季豆(ganbian sijidou), it literally means “dry seared.” So rather than deep-frying the green beans (a method used in restaurants because it’s a faster process), I did just that—seared them in a dry wok without oil. The outcome was brilliant.",30 mins,N/A,mild,0,334,684,https://i.pinimg.com/564x/9a/37/e6/9a37e680c137cbe1c3727cc32f768494.jpg,,My Cookbook,Zoe,password,
+Deep-frying makes a healthy ingredient very unhealthy. However, when you think about the name of the dish in Chinese, 干煸四季豆(ganbian sijidou), it literally means “dry seared.” So rather than deep-frying the green beans (a method used in restaurants because it’s a faster process), I did just that—seared them in a dry wok without oil. The outcome was brilliant.",30 min,N/A,mild,0,334,684,https://i.pinimg.com/564x/9a/37/e6/9a37e680c137cbe1c3727cc32f768494.jpg,
 Spicy Chicken,English,Sichuan,"Marinating
 -- 1 tbsp. soy sauce
 -- 1 tbsp. rice wine
@@ -135,19 +135,4 @@ Spicy Chicken,English,Sichuan,"Marinating
 
 you might not have dared touch it for fear of burning a hole through your mouth. All those chili peppers can be intimidating, but I promise it is not as spicy as it looks, and you will love it to death!
 
-Laziji originated near Geleshan in Chongqing, where restaurateurs used small free-range chickens from nearby farms. This poultry became a signature export for Geleshan.",40 mins,N/A,hot,10,220,745,https://i.pinimg.com/564x/86/01/c1/8601c12c00f1c1791467dc9fe1032675.jpg,,My Cookbook,Zoe,password,
-,English,Jiangsu,,,,,,,,,,,Lunch Cookbook,Jing,password,
-,English,Jiangsu,,,,,,,,,,,Lunch Cookbook,Jing,password,
-,English,Jiangsu,,,,,,,,,,,Lunch Cookbook,Jing,password,
-,English,Jiangsu,,,,,,,,,,,Lunch Cookbook,Jing,password,
-,English,Jiangsu,,,,,,,,,,,Lunch Cookbook,Jing,password,
-,English,Jiangsu,,,,,,,,,,,Lunch Cookbook,Jing,password,
-,English,Jiangsu,,,,,,,,,,,Dinner Cookbook,Jing,password,
-,English,Jiangsu,,,,,,,,,,,Dinner Cookbook,Jing,password,
-General Tso's Chicken,English,Others,,,35 mins,,mild,40,634,1000,https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flickr_preppybyday_4665999863--General_Tso%27s_Chicken.jpg/800px-Flickr_preppybyday_4665999863--General_Tso%27s_Chicken.jpg,,Dinner Cookbook,Jing,password,
-____,Chinese,Hunan,"1. ______________________________________________________________
-2. _______________________________________
-3. ________________________________________________________________________________________________________
-4. ___________________________________________________________________
-5. _________________________________________________2-3________________________",,30 mins,N/A,hot,10,500,300,http://i2.chuimg.com/965ccf048b4d11e6b87c0242ac110003_960w_1280h.jpg?imageView2/2/w/660/interlace/1/q/90,,Dinner Cookbook,Jing,password,
-,,,,,,,,,,,,,,,,
+Laziji originated near Geleshan in Chongqing, where restaurateurs used small free-range chickens from nearby farms. This poultry became a signature export for Geleshan.",40 min,N/A,hot,10,220,745,https://i.pinimg.com/564x/86/01/c1/8601c12c00f1c1791467dc9fe1032675.jpg,
