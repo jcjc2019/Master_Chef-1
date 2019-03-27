@@ -1,0 +1,11 @@
+<h1>Create a Cookbook</h1>
+
+<%= form_for @user.cook_books.build do | form | %>
+    <div class="form-group row">
+        <div class ="col-auto">
+            <%= form.label "cookbook name" %>
+            <%= form.text_field :name %>
+        </div>
+    </div>
+<%= form.submit "Create this cookbook", class: "btn btn-primary" %>
+<% end %>

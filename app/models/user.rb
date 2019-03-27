@@ -9,6 +9,7 @@ class User < ApplicationRecord
 
     attr_accessor :password
     has_secure_password
+    accepts_nested_attributes_for :cook_books
 
     def authenticate(password)
         if BCrypt::Password.new(self.password_digest) == password

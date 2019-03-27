@@ -8,26 +8,26 @@ class CookBooksController < ApplicationController
     end
 
     def new
-        @errors = flash[:errors] || {}
         @cook_book = CookBook.new
+        @user = current_user 
     end
-
+ 
     def create
-        @cook_book = CookBook.new(cook_book_params[:cook_book])
-        if @cook_book.valid?
-            @cook_book.save
-            redirect_to @cook_book
-        else
-            flash[:errors] = @cook_book.errors.messages
-            render :new
-        end
+       @user = current_user
+       cook_book = CookBook.create(cook_book_params)
+       @user.cook_books << cook_book
+       byebug
+       redirect_to user_path(@user)
     end
 
+     
+=begin
     def edit
         @cook_book = CookBook.find(params[:id])
         @cook_books = CookBook.all
         @errors = flash[:errors] || {}
     end
+
 
     def update
         @cook_book = CookBook.find(params[:id])
@@ -48,10 +48,10 @@ class CookBooksController < ApplicationController
         #redirect to user page
         redirect_to "/users/#{@cook_book.user_id}"
     end
-
+=end
     private
 
     def cook_book_params
-        params.permit(cook_book:[:name, :user_id, :recipe_id])
+        params.require(:cook_book).permit(:name, :user_id, :recipe_id)
     end    
 end
