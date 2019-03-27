@@ -9,6 +9,7 @@ class User < ApplicationRecord
 
     attr_accessor :password
     has_secure_password
+    accepts_nested_attributes_for :cook_books
 
     def authenticate(password)
         if BCrypt::Password.new(self.password_digest) == password
@@ -23,13 +24,6 @@ class User < ApplicationRecord
         return self.password_digest = BCrypt::Password.create(password)
      end
    end
-
-=begin   
-    def self.import(file)
-        CSV.foreach(file, :headers => true) do |row|
-            User.create!(row.to_hash)
-        end
-    end
-=end        
+   
 end
     

@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
     #skip_before_action :authenticate, only:[:new, :create]
+    def show
+        @user = current_user
+    end 
 
     def new #display sign up form
         @user = User.new
@@ -19,12 +22,19 @@ class UsersController < ApplicationController
         else
             render :new
         end 
+        
     end
 
-    def show
-        @user = current_user
-    end      
+    # def show
+    #     @user = current_user
+    # end 
 
+    # def update
+    #     @user = current_user
+    #     redirect_to @user
+    # end
+
+  
 =begin   
     def current_user
         User.find(session[:current_user_id]) if(session[:current_user_id])
