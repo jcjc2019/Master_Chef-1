@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
-
+ #login page
+ 
  def index
  end
 
@@ -8,7 +9,7 @@ class SessionsController < ApplicationController
 
  def create
    user = User.find_by(username: params[:username])     
-   if  user && user.authenticate(params[:password])  ### authenticate, check password against db?? 
+   if user && user.authenticate(params[:password])  
       session[:user_id] = user.id
       redirect_to user
    else
