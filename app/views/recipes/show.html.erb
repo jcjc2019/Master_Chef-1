@@ -89,9 +89,13 @@
   <%= form_with(method: 'patch', url: "/recipes/#{@recipe.id}/add_likes") do |f|%>
       <%= f.submit "Like this!", class: "btn btn-danger"%> 
   <%end%>
-  <%= @recipe.likes%>
+  <%= @recipe.likes%> 
 </tr>
 
 </table>
 </div>
 </ul>
+
+<%= form_for @recipe, method: :delete do |form| %> 
+<%= form.submit "remove from my cookbook" %>
+<% end %>

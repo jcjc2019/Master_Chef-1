@@ -2,11 +2,12 @@
 <br>
 <p>What would you like to eat today?</p>
 <% @cook_book.recipes.each do |recipe| %>
-  <li><%= recipe.name %></li>
+  <ol><%= link_to recipe.name, recipe_path(recipe) %> 
+  </ol>
 <% end %>
 
 <!-- <a href="/cook_books/<%= @cook_book.id%>/edit">Edit Cook Book</a> -->
 <%= button_to "Add new recipe", edit_cook_book_path,  method: :get, class: "btn btn-success" %><br>
 <%= form_for @cook_book, method: :delete do |form| %>
-<%= form.submit "Delete this cookbook" %>
-<% end %>
+<%= form.submit "Delete this cookbook" %> 
+<% end %> 

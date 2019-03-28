@@ -1,4 +1,6 @@
 class CookBooksController < ApplicationController
+    before_action :authenticate
+
     def index
         @cook_books = CookBook.all
     end
@@ -22,10 +24,10 @@ class CookBooksController < ApplicationController
     end
 
     def edit
-        @user = current_user
-        @cook_book = CookBook.find(params[:id])
+         @user = current_user
+         @cook_book = CookBook.find(params[:id])
         #byebug
-        #redirect_to cook_book_path(cook_book)
+        
     end
 
     def update
@@ -40,26 +42,12 @@ class CookBooksController < ApplicationController
      
     def destroy
         @user = current_user
-        @cook_book = CookBook.find(params[:id])
+        @cook_book = CookBook.find(params[:id]) #delete cook_book association
         @user.cook_books.delete(@cook_book)
+        #byebug
         redirect_to user_path(@user)
     end
-=begin
 
-
-    def update
-        @cook_book = CookBook.find(params[:id])
-        @cook_book.assign_attributes(cook_book_params[:cook_book])
-        if @cook_book.valid?
-            @cook_book.save
-            redirect_to @cook_book
-        else
-            flash[:errors] = @cook_book.errors.messages
-            render :edit
-        end
-    end
-
-=end
     private
 
     def cook_book_params
