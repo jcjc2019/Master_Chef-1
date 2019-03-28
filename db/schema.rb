@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_27_231831) do
+ActiveRecord::Schema.define(version: 2019_03_28_161800) do
+
+  create_table "cook_book_recipes", force: :cascade do |t|
+    t.integer "cook_book_id"
+    t.integer "recipe_id"
+    t.index ["cook_book_id"], name: "index_cook_book_recipes_on_cook_book_id"
+    t.index ["recipe_id"], name: "index_cook_book_recipes_on_recipe_id"
+  end
 
   create_table "cook_books", force: :cascade do |t|
     t.string "name", default: "My Cookbook"
@@ -18,12 +25,6 @@ ActiveRecord::Schema.define(version: 2019_03_27_231831) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_cook_books_on_user_id"
-  end
-
-  create_table "cook_books_recipes", id: false, force: :cascade do |t|
-    t.integer "cook_book_id", null: false
-    t.integer "recipe_id", null: false
-    t.index ["cook_book_id", "recipe_id"], name: "index_cook_books_recipes_on_cook_book_id_and_recipe_id"
   end
 
   create_table "ingredients", force: :cascade do |t|
