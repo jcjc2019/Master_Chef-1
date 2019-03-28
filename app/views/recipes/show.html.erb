@@ -86,10 +86,10 @@
 </tr>
 
 <tr>
-  <%= form_with(method: 'patch', url: "/recipes/#{@recipe.id}/add_likes") do |f|%>
-      <%= f.submit "Like this!", class: "btn btn-danger"%> 
+  <%= form_tag action = "/recipes/#{@recipe.id}/add_likes", method: 'put' do %>
+  <%= submit_tag "Like", class: "btn btn-danger"%> 
+      <%= @recipe.likes %>
   <%end%>
-  <%= @recipe.likes%> 
 </tr>
 
 </table>

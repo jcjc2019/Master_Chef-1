@@ -58,12 +58,14 @@ class RecipesController < ApplicationController
 
     
 
-    def add_likes
+    def add_likes 
         @recipe = Recipe.find(params[:id])
+        #byebug
         @recipe.likes ||= 0  #set up default value for new recipe as 0
         @recipe.likes += 1
         @recipe.save
-        redirect_to @recipe
+        #byebug
+        redirect_to @recipe 
     end
     private
 
