@@ -1,1 +1,17 @@
 <h1><%= @cook_book.name %></h1>
+<br>
+
+<% @cook_book.recipes.each do |recipe| %>
+  <%= recipe.name %>
+<% end %>
+
+<p>Add a recipe</p>
+<%= form_for @cook_book, method: :patch do |form| %>
+<%= form.collection_select :recipe_ids, Recipe.all, :id, :name %>
+<%= form.submit "Add to cookbook"%>
+<% end %>
+
+<br>
+<%= form_for @cook_book, method: :delete do |form| %>
+<%= form.submit "Delete this cookbook" %>
+<% end %>

@@ -10,9 +10,11 @@
 
 <h4>My Cookbook</h4>
 <% @user.cook_books.each do |cook_book|%></p>
-    <li><%= cook_book.name %></li>
+    <h5><ol><%= link_to cook_book.name, cook_book_path(cook_book) %></ol></h5>
 <%end%>
-
+<br>
+<br>
+<br>
 <h3><%= button_to "Create a new cookbook", new_cook_book_path,  method:"get", class: "btn btn-success" %></h3>
 <h3><%= button_to "Create a new recipe", new_recipe_path,  method:"get", class: "btn btn-success" %></h3>
 
