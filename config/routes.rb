@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :cook_books
   resources :ingredients
   resources :recipes
-  resources :users
+  resources :users 
   resources :sessions
   resources :cook_book_recipes
 
