@@ -10,7 +10,7 @@ require_relative '../config/environment'
 #   Character.create(name: 'Luke', movie: movies.first)
 Recipe.destroy_all
 User.destroy_all
- 
+Ingredient.destroy_all
 adam = User.new({ :username => "Adam Moran",  :password => "Adam", :translator => false })
 adam.hash_password # calling the method in user model
 adam.save
