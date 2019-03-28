@@ -6,7 +6,7 @@
 
   <% @ingredients.each do |ingredient| %>
     <li><h3><%= link_to "#{ingredient.name}", ingredient_path(ingredient)%></h3></li>
-    <p>Recipes used this ingredient: 
+    <p>Recipes that used this ingredient: 
     <% ingredient.recipes.each do | recipe | %>
       <p><%= link_to "#{recipe.name}", recipe_path(recipe)%>
     <% end %>

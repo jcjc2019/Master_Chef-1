@@ -1,9 +1,10 @@
+<p>
 <ul><h1>Edit Recipe</h1></ul>
 <%= form_with( model: @recipe, method: 'patch' ) do | form | %>
     <ul>
     <div class="form-group row">
         <div class ="col-auto">
-            <h3><%= form.label "Name" %></h3>
+            <h4><%= form.label "Name" %></h4>
             <% name_error_class = 'is-invalid' if(@errors["name"]) %>
             <%= form.text_field :name, class: "form-control #{name_error_class}" %>
             <% (@errors["name"] || [] ).each do | message | %>
@@ -14,7 +15,7 @@
 
     <div class="form-group row"> 
         <div class ="col-auto">  
-        <p><%= form.label "Instructions" %></p>
+        <h4><%= form.label "Instructions" %></h4>
         <%= form.text_area :instructions, class: "form-control #{ @errors["instructions"] ? 'is-invalid' : '' }" %>
         <% (@errors["instructions"] || [] ).each do | message | %>
         <span class="invalid-feedback"><%= message %></span>
@@ -24,7 +25,7 @@
 
     <div class="form-group row">
         <div class ="col-auto">  
-            <p><%= form.label "Cook Time" %></p>
+            <h4><%= form.label "Cook Time"%></h4>
             <%= form.text_field :cook_time, class: "form-control #{ @errors["cook_time"] ? 'is-invalid' : '' }" %>
             <% (@errors["cook_time"] || [] ).each do | message | %>
             <span class="invalid-feedback"><%= message %></span>
@@ -34,19 +35,15 @@
 
     <div class="form-group row">
         <div class ="col-auto">  
-            <p><% form.label "Ingredients" %>Select from currently available ingredients:</p>
-            <%= form.collection_check_boxes :ingredient_ids, Ingredient.all, :id, :name %>
+            <h4><% form.label "Ingredients" %>Select from currently available ingredients:</h4>
+            <p></p><%= form.collection_check_boxes :ingredient_ids, Ingredient.all, :id, :name %>
             <p>
-            <p><% form.label "Ingredients" %>Add new ingredients:
-            <p><%= form.fields_for :ingredients, @recipe.ingredients.build do |ingredients_fields| %>
-                <%= ingredients_fields.text_field :name %>
-            <% end %>
         </div>
     </div> 
 
     <div class="form-group row">
         <div class ="col-auto"> 
-        <p><%= form.label "History" %></p>
+        <h4><%= form.label "History" %></h4>
         <%= form.text_area :history, class: "form-control #{ @errors["history"] ? 'is-invalid' : '' }" %>
         <% (@errors["history"] || [] ).each do | message | %>
         <span class="invalid-feedback"><%= message %></span>
@@ -56,7 +53,7 @@
 
     <div class="form-group row"> 
         <div class ="col-auto">   
-            <p><%= form.label "Origin Century" %></p>
+            <h4><%= form.label "Origin Century" %></h4>
             <%= form.text_field :origin_century, class: "form-control #{ @errors["origin_century"] ? 'is-invalid' : '' }" %>
             <% (@errors["origin_century"] || [] ).each do | message | %>
             <span class="invalid-feedback"><%= message %></span>
@@ -66,7 +63,7 @@
 
     <div class="form-group row"> 
         <div class ="col-auto">   
-            <p><%= form.label "Spicy Level" %></p>
+            <h4><%= form.label "Spicy Level" %></h4>
             <div class="custom-control custom-radio custom-control-inline">
             <p><%= form.radio_button :spicy_level, "hot" %> Hot</p>
         </div>
@@ -82,14 +79,14 @@
 
     <div class="form-group row"> 
         <div class ="col-auto">   
-            <p><%= form.label "Sweet Level (10-100)" %></p>
+            <h4><%= form.label "Sweet Level (10-100)" %></h4>
             <p><%= form.select :from, ["10", '20','30', '40', '50','60', '70', '80', '90', '100'] %></p>
         </div>
     </div>
     
     <div class="form-group row"> 
         <div class ="col-auto">   
-            <p><%= form.label "Calories" %></p>
+            <h4><%= form.label "Calories" %></h4>
             <%= form.text_field :calories, class: "form-control #{ @errors["calories"] ? 'is-invalid' : '' }" %>
             <% (@errors["calories"] || [] ).each do | message | %>
             <span class="invalid-feedback"><%= message %></span>
@@ -99,7 +96,7 @@
 
     <div class="form-group row"> 
         <div class ="col-auto">   
-            <p><%= form.label "Image Link" %></p>
+            <h4><%= form.label "Image Link" %></h4>
             <%= form.text_field :img_url, class: "form-control #{ @errors["img_url"] ? 'is-invalid' : '' }" %>
             <% (@errors["img_url"] || [] ).each do | message | %>
             <span class="invalid-feedback"><%= message %></span>
@@ -109,7 +106,7 @@
 
     <div class="form-group row"> 
         <div class ="col-auto">   
-            <p><%= form.submit "Confirm Editing", class: "btn btn-primary" %>
+            <h4><%= form.submit "Confirm Editing", class: "btn btn-primary" %>
         </div>
     </div>
 <% end %>

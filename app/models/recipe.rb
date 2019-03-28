@@ -18,14 +18,12 @@ class Recipe < ApplicationRecord
         Ingredient.select('ingredients.*, count(recipe_ingredients.ingredient_id) as count').joins(:recipe_ingredients).group('recipe_ingredients.ingredient_id')
     end
 
-    def ingredient_list
-        ingredients.map(&:name).join(', ')
-    end
-
-    def ingredient_list=(names)
-        self.igredients = names.split(',').map do |n|
-            Ingredient.where(name: n.strip).first_or_create!
+    def ingredients_attributes=(ingredient_attributes)
+        ingredient_attributes.values.each do |ingredient_attribute|
+            ingredient = Ingredient.find_or_create_by(ingredient_attribute)
+            self.ingredients << ingredient
         end
     end
+
 
 end
