@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :recipes
   resources :users
   resources :sessions
+  resources :cook_book_recipes
 
   get 'users/import' => 'users#my_import'
   root to: 'sessions#index'

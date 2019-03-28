@@ -1,4 +1,6 @@
 class RecipesController < ApplicationController
+    skip_before_action :authenticate, only:[:index]
+
     def index
         @recipes = Recipe.all
     end
@@ -42,11 +44,19 @@ class RecipesController < ApplicationController
     end
 
     def destroy
+        @user = current_user
         @recipe = Recipe.find(params[:id])
-        @recipe.destroy
-        #redirect to recipes page
-        redirect_to recipes_path
+        @user.cook_books.select do |cook_book|
+           if cook_book.recipes.include?(@recipe)
+            cook_book.recipes.delete(@recipe)            
+            #byebug
+            redirect_to "/cook_books/#{cook_book.id}"
+           end
+        end
+       
     end
+
+    
 
     def add_likes
         @recipe = Recipe.find(params[:id])
