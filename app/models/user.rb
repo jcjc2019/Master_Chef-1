@@ -1,6 +1,6 @@
 
 class User < ApplicationRecord    
-    has_many :cook_books #, dependent: :destroy
+    has_many :cook_books 
     has_many :recipes, through: :cook_books
 
     validates :username, presence: true
@@ -9,7 +9,7 @@ class User < ApplicationRecord
 
     attr_accessor :password
     has_secure_password
-    accepts_nested_attributes_for :cook_books
+    
 
     def authenticate(password)
         if BCrypt::Password.new(self.password_digest) == password

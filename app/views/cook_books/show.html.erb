@@ -1,17 +1,12 @@
 <h1><%= @cook_book.name %></h1>
 <br>
-
+<p>What would you like to eat today?</p>
 <% @cook_book.recipes.each do |recipe| %>
-  <%= recipe.name %>
+  <li><%= recipe.name %></li>
 <% end %>
 
-<p>Add a recipe</p>
-<%= form_for @cook_book, method: :patch do |form| %>
-<%= form.collection_select :recipe_ids, Recipe.all, :id, :name %>
-<%= form.submit "Add to cookbook"%>
-<% end %>
-
-<br>
+<!-- <a href="/cook_books/<%= @cook_book.id%>/edit">Edit Cook Book</a> -->
+<%= button_to "Add new recipe", edit_cook_book_path,  method: :get, class: "btn btn-success" %><br>
 <%= form_for @cook_book, method: :delete do |form| %>
 <%= form.submit "Delete this cookbook" %>
 <% end %>
