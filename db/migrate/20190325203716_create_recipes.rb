@@ -11,7 +11,7 @@ class CreateRecipes < ActiveRecord::Migration[5.2]
       t.string :origin_century
       t.string :spicy_level
       t.string :sugar_level
-      t.integer :calories
+      t.string :calories
       t.integer :likes
       t.string :img_url
       t.timestamps

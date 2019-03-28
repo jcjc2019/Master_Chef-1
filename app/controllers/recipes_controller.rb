@@ -31,6 +31,7 @@ class RecipesController < ApplicationController
 
     def update
         @recipe = Recipe.find(params[:id])
+        
         @recipe.assign_attributes(recipe_params[:recipe])
         if @recipe.valid?
             @recipe.save
@@ -58,6 +59,6 @@ class RecipesController < ApplicationController
     private
 
     def recipe_params
-        params.permit(recipe:[:name, :language, :region, :instructions, :history, :comment, :cook_time, :origin_century, :spicy_level, :sugar_level, :calories, :likes, :img_url, :ingredient_list, :ingredient, {ingredient_ids:[]}, :ingredient_ids])
+        params.permit(recipe:[:name, :language, :region, :instructions, :history, :comment, :cook_time, :origin_century, :spicy_level, :sugar_level, :calories, :likes, :img_url, :ingredient_ids[], :ingredients_attributes[:name]])
     end
 end

@@ -5,9 +5,12 @@
 <ul>
 
   <% @ingredients.each do |ingredient| %>
-    <li><%= link_to "#{ingredient.name}", ingredient_path(ingredient)%></li>
+    <li><h3><%= link_to "#{ingredient.name}", ingredient_path(ingredient)%></h3></li>
     <p>Recipes used this ingredient: 
-    <%= raw ingredient.recipes.map(&:name).map { |i| link_to i, recipe_path(i) }.join(', ') %></p>
+    <% ingredient.recipes.each do | recipe | %>
+      <p><%= link_to "#{recipe.name}", recipe_path(recipe)%>
+    <% end %>
+    
   <% end %>
 
 </ul>

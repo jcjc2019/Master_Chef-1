@@ -8,6 +8,7 @@ class Recipe < ApplicationRecord
 
     validates :name, presence: true
     validates :cook_time, presence: true
+    accepts_nested_attributes_for :ingredients
     
     #  def self.import(file)
     #      CSV.foreach(file, :headers => true) do |row|

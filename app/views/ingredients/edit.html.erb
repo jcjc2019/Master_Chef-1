@@ -1,5 +1,5 @@
 <ul><h1>Edit a Current Ingredient</h1></ul>
-<%= form_with( model: @ingredient ) do | form | %>
+<%= form_with( model: @ingredient, method: 'patch' ) do | form | %>
     <ul>
     <div class="form-group row">
         <div class ="col-auto">

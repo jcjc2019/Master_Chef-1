@@ -1,5 +1,5 @@
 <ul><h1>Edit Recipe</h1></ul>
-<%= form_with( model: @recipe ) do | form | %>
+<%= form_with( model: @recipe, method: 'patch' ) do | form | %>
     <ul>
     <div class="form-group row">
         <div class ="col-auto">
@@ -34,8 +34,13 @@
 
     <div class="form-group row">
         <div class ="col-auto">  
-            <p><%= form.label "Ingredients" %>: Press "Command" (Mac) or "Control"(Windows) to make multiple selections.</p>
-            <%= form.collection_select :ingredient_ids, Ingredient.all, :id, :name, {}, {multiple: true} %>
+            <p><% form.label "Ingredients" %>Select from currently available ingredients:</p>
+            <%= form.collection_check_boxes :ingredient_ids, Ingredient.all, :id, :name %>
+            <p>
+            <p><% form.label "Ingredients" %>Add new ingredients:
+            <p><%= form.fields_for :ingredients, @recipe.ingredients.build do |ingredients_fields| %>
+                <%= ingredients_fields.text_field :name %>
+            <% end %>
         </div>
     </div> 
 

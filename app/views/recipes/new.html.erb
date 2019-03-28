@@ -34,8 +34,13 @@
 
     <div class="form-group row">
         <div class ="col-auto">  
-            <p><%= form.label "Ingredients" %></p>
+            <p><% form.label "Ingredients" %>Select from currently available ingredients:</p>
             <%= form.collection_select :ingredient_ids, Ingredient.all, :id, :name, {}, {multiple: true} %>
+            <p>
+            <p><% form.label "Ingredients" %>Add new ingredients:
+            <p><%= form.fields_for :ingredients, @recipe.ingredients.build do |ingredients_fields| %>
+                <%= ingredients_fields.text_field :name %>
+            <% end %>
         </div>
     </div> 
 

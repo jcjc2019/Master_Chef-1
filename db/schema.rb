@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 2019_03_28_161800) do
     t.string "origin_century"
     t.string "spicy_level"
     t.string "sugar_level"
-    t.integer "calories"
+    t.string "calories"
     t.integer "likes"
     t.string "img_url"
     t.datetime "created_at", null: false
