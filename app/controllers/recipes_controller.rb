@@ -39,7 +39,7 @@ class RecipesController < ApplicationController
             @recipe.save
             redirect_to @recipe
         else
-            flash[:errors] = @recipe.errors.messages
+            flash[:errors] = @recipe.errors.messages  
             render :edit
         end
     end
