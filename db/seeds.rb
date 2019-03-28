@@ -80,6 +80,7 @@ chicken = Ingredient.create(name: "Chicken", description: "Chicken meat.")
 pork = Ingredient.create(name: "Pork", description: "Pork meat.")
 fish = Ingredient.create(name: "Fish", description: "Fish meat.")
 tofu = Ingredient.create(name: "Tofu", description: "Pork meat", origin_country: "China")
+peanut = Ingredient.create(name: "Peanut", description: "Peanut, Arachis hypogaea, is an herbaceous annual plant in the family Fabaceae grown for its oil and edible nuts. Peanut plants are small, usually erect, thin stemmed plants with feather-like leaves.", origin_country: "countries in South America")
 
 
 class Rectable

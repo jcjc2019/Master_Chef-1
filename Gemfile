@@ -44,8 +44,7 @@ gem 'activerecord-import'
 gem 'csv'
 
 gem 'rails-assets-tether', source: 'https://rails-assets.org'
-gem 'rails-assets-chosen', source: 'https://rails-assets.org'
-
+gem 'chosen-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -34,7 +34,7 @@
 
     <div class="form-group row">
         <div class ="col-auto">  
-            <p><%= form.label "Ingredients" %></p>
+            <p><%= form.label "Ingredients" %>: Press "Command" (Mac) or "Control"(Windows) to make multiple selections.</p>
             <%= form.collection_select :ingredient_ids, Ingredient.all, :id, :name, {}, {multiple: true} %>
         </div>
     </div> 

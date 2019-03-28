@@ -1,0 +1,13 @@
+<p>
+<p>
+<h1 class = "text-center">All Ingredients</h1>
+<p>
+<ul>
+
+  <% @ingredients.each do |ingredient| %>
+    <li><%= link_to "#{ingredient.name}", ingredient_path(ingredient)%></li>
+    <p>Recipes used this ingredient: 
+    <%= raw ingredient.recipes.map(&:name).map { |i| link_to i, recipe_path(i) }.join(', ') %></p>
+  <% end %>
+
+</ul>

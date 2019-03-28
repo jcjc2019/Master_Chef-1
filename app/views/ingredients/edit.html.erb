@@ -1,0 +1,37 @@
+<ul><h1>Edit a Current Ingredient</h1></ul>
+<%= form_with( model: @ingredient ) do | form | %>
+    <ul>
+    <div class="form-group row">
+        <div class ="col-auto">
+            <h3><%= form.label "Name" %></h3>
+            <% name_error_class = 'is-invalid' if(@errors["name"]) %>
+            <%= form.text_field :name, class: "form-control #{name_error_class}" %>
+            <% (@errors["name"] || [] ).each do | message | %>
+                <span class="invalid-feedback"><%= message %></span>
+            <% end %>
+        </div>
+    </div>
+
+    <div class="form-group row"> 
+        <div class ="col-auto">  
+        <p><%= form.label "Description" %></p>
+        <%= form.text_area :description, class: "form-control #{ @errors["description"] ? 'is-invalid' : '' }" %>
+        <% (@errors["description"] || [] ).each do | message | %>
+        <span class="invalid-feedback"><%= message %></span>
+        <% end %>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class ="col-auto">  
+            <p><%= form.label "Origin Country" %></p>
+            <%= form.text_field :origin_country, class: "form-control #{ @errors["origin_country"] ? 'is-invalid' : '' }" %>
+            <% (@errors["origin_country"] || [] ).each do | message | %>
+            <span class="invalid-feedback"><%= message %></span>
+            <% end %>
+        </div>
+    </div> 
+
+    <p><%= form.submit "Confirm Editing", class: "btn btn-primary" %>
+<% end %>
+</ul>
