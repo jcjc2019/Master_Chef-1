@@ -12,32 +12,32 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   
-    <div class="container">
+    <div class="container text-dark">
     <nav class="nav nav-pills nav-fill sticky-top">
-      <a class="navbar-brand" href="/sessions">MasterChef</a>
+      <a class="navbar-brand" href="/sessions"><strong style = "font-size:36px" >MasterChef</strong></a>
 
       <li class="nav-item-active">
-        <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/sessions') ? 'active' : '' %>" href="/sessions" >Welcome</a>
+        <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/sessions') ? 'active' : '' %>" href="/sessions" ><strong style = "font-size:26px" >Welcome</strong></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/users') ? 'active' : '' %>"  href="/sessions/new"  >My Page</a>
+        <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/users') ? 'active' : '' %>"  href="/sessions/new"  ><strong style = "font-size:26px"> My Page</strong></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/recipes') ? 'active' : '' %>" href="/recipes" >Recipes</a>
+        <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/recipes') ? 'active' : '' %>" href="/recipes" ><strong style = "font-size:26px">Recipes</strong></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/ingredients') ? 'active' : '' %>" href="/ingredients" >Ingredients</a>
+        <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/ingredients') ? 'active' : '' %>" href="/ingredients" ><strong style = "font-size:26px">Ingredients</strong></a>
       </li>
       
       <li class="nav-item">
-        <a class="nav-link" href ="/static/analytics">Analytics</a>
+        <a class="nav-link" href ="/static/analytics"><strong style = "font-size:26px">Analytics</strong></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href ="/static/about">About</a>
+        <a class="nav-link" href ="/static/about"><strong style = "font-size:26px">About</strong></a>
       </li>
     </nav>
   </div>
