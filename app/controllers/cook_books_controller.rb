@@ -6,11 +6,11 @@ class CookBooksController < ApplicationController
     def show
         @user = current_user
         @cook_book = CookBook.find(params[:id])
-    end 
+        #byebug
+    end  
 
     def new
         @user = current_user 
-        #@cook_book = CookBook.new(cook_book_params)
     end
  
     def create
@@ -21,11 +21,20 @@ class CookBooksController < ApplicationController
        redirect_to user_path(@user)
     end
 
+    def edit
+        @user = current_user
+        @cook_book = CookBook.find(params[:id])
+        #byebug
+        #redirect_to cook_book_path(cook_book)
+    end
+
     def update
         @user = current_user
-        cook_book = CookBook.find(params[:id])
-        cook_book.save
-        redirect_to 
+        @cook_book = CookBook.find(params[:id])
+        rc = Recipe.find(params[:cook_book][:recipe_ids].to_i)
+        @cook_book.recipes << rc
+        redirect_to @cook_book
+        #byebug
     end
 
      
@@ -36,11 +45,6 @@ class CookBooksController < ApplicationController
         redirect_to user_path(@user)
     end
 =begin
-    def edit
-        @cook_book = CookBook.find(params[:id])
-        @cook_books = CookBook.all
-        @errors = flash[:errors] || {}
-    end
 
 
     def update
@@ -59,6 +63,8 @@ class CookBooksController < ApplicationController
     private
 
     def cook_book_params
-        params.require(:cook_book).permit(:name)
+        params.require(:cook_book).permit(:name, :user_id, :recipe_ids=> [])
     end    
 end
+
+ 

@@ -1,0 +1,11 @@
+<h1>Manage my <%= @cook_book.name %> CookBook</h1>
+
+<%= form_for @cook_book do |form| %>
+<%= form.label "Add a recipe" %><br>
+<%= form.collection_select :recipe_ids, Recipe.all, :id, :name %>
+<%= form.submit "Add"%>
+<% end %>
+
+<br>
+
+ 
