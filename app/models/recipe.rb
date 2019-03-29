@@ -25,25 +25,15 @@ class Recipe < ApplicationRecord
         end
     end
 
-    # def self.search(search)
-    #     if search
-    #         ingredient = Ingredient.find_by(name:search)
-    #         if ingredient
-    #             self.where(ingredient_id: ingredient)
-    #         else
-    #             Recipe.all
-    #         end
-    #     else
-    #         Recipe.all
-    #     end
-    # end
-
-    def self.search(name)
-        if name
-            where('name LIKE ?', "%#{name}%").order('id DESC')
-        else
-            all
-        end
+    def self.search(search)
+        search = search.capitalize
+        selected_ingredient = Ingredient.find_by(name:search)
+        if selected_ingredient
+            Recipe.all.select do |recipe|
+            recipe.ingredients.include?(selected_ingredient)
+            end
+        end    
     end
 
+    
 end

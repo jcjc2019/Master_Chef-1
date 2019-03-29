@@ -6,7 +6,7 @@
 
 <% @ingredients.each do |ingredient| %>
     <li><h3 class = "text-light"><%= link_to "#{ingredient.name}", ingredient_path(ingredient)%></h3></li>
-    <p class = "text-light">Recipes used this ingredient:
+    <p class = "text-dark">Recipes used this ingredient:
     <% ingredient.recipes.each do | recipe | %>
       <br><%= link_to "#{recipe.name}", recipe_path(recipe)%>
     <% end %>

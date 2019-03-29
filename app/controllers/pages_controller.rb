@@ -6,7 +6,6 @@ class PagesController < ApplicationController
             @parameter = params[:search].downcase
             @rec_results = Recipe.all.where("lower(name) LIKE :search", search:"%#{@parameter}%" )
             @ing_results = Ingredient.all.where("lower(name) LIKE :search", search:"%#{@parameter}%" )
-            byebug
             # @results = Recipe.joins(:ingredient).search(params[:search]).order("recipes.name DESC")
         end
     end
