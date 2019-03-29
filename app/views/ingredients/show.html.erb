@@ -1,20 +1,20 @@
 <p>
-<h2 class = "text-center text-light"><%= @ingredient.name %></h2>
+<h2 class = "text-center"><%= @ingredient.name %></h2>
 
 <ul>
 <div class="table-responsive-xl">
 <table class="table">
 
 <tr>
-  <p class = "text-center text-light">Description: <%= @ingredient.description %>
-</tr>
+  <p class = "text-center">Description: <%= @ingredient.description %>
+</tr>  
 
 
 <tr>
-  <p class = "text-center text-light">Origin Country: <%= @ingredient.origin_country %>
+  <p class = "text-center">Origin Country: <%= @ingredient.origin_country %>
 </tr>
 <tr>
-  <p class= "text-center text-light"><%= button_to "Edit Ingredient", edit_ingredient_path,  method: :get, class: "btn btn-success" %>
+  <p class= "text-center"><%= button_to "Edit Ingredient", edit_ingredient_path,  method: :get, class: "btn btn-success" %>
 </tr>
 
 </table>
