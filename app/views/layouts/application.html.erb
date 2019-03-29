@@ -4,63 +4,31 @@
     <title>MasterChef</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
-    <div class="container text-dark">
-    <nav class="nav nav-pills nav-fill sticky-top">
-      <a class="navbar-brand" href="/sessions"><strong style = "font-size:36px" >MasterChef</strong></a>
-
-      <li class="nav-item-active">
-        <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/sessions') ? 'active' : '' %>" href="/sessions" ><strong style = "font-size:26px" >Welcome</strong></a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/users') ? 'active' : '' %>"  href="/sessions/new"  ><strong style = "font-size:26px"> My Page</strong></a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/recipes') ? 'active' : '' %>" href="/recipes" ><strong style = "font-size:26px">Recipes</strong></a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/ingredients') ? 'active' : '' %>" href="/ingredients" ><strong style = "font-size:26px">Ingredients</strong></a>
-      </li>
-      
-      <li class="nav-item">
-        <a class="nav-link" href ="/static/analytics"><strong style = "font-size:26px">Analytics</strong></a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href ="/static/about"><strong style = "font-size:26px">About</strong></a>
-      </li>
-    </nav>
-  </div>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
     
+
+    <%=render 'layouts/navbar'%>
   </head>
 
   <body>
 
 
-
-
   <div class="container">
+
+  <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
     <%= yield %>
   </div>
 
   </body>
 
-<script>
-  $(document).on('ready page:load', function () {
-    $('#recipe_ingredient_ids').chosen({
-      allow_single_deselect: true,
-      width: '100%'
-    })
-  });
-</script>
 </html>

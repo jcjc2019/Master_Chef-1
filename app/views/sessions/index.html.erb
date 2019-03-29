@@ -7,6 +7,12 @@
   <!-- Header - set the background image for the header in the line below -->
   <header>
     <img src="<%= image_url("logo.png") %>" alt="logo" class="rounded mx-auto d-block img-fluid", height="250" width="250" >
+    <%if session[:user_id]%>
+    <%= render 'layouts/navbar' %>
+    <%else%>
+    <%=render 'layouts/login'%>
+    <%end%>
+
   </header>
 
 

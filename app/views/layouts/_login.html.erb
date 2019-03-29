@@ -1,0 +1,33 @@
+    <div class="container text-dark">
+    <nav class="nav nav-pills nav-fill fixed-top "  style="background-color: #e3f2fd;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <li class="nav-item-active">
+        <a class="navbar-brand" href="/sessions">MasterChef</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sessions" ><strong style = "font-size:18px" >Welcome</strong></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/sessions/new') ? 'active' : '' %>" href="/sessions/new" ><strong style = "font-size:18px"> Log In</strong></a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/recipes') ? 'active' : '' %>" href="/recipes" ><strong style = "font-size:18px">Recipes</strong></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/ingredients') ? 'active' : '' %>" href="/ingredients" ><strong style = "font-size:18px">Ingredients</strong></a>
+      </li>
+
+
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+
+    </nav>
+  </div>
+

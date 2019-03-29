@@ -92,10 +92,18 @@
   <%end%>
 </tr>
 
+<tr>
+<%if @user.recipes.include?(@recipe)%>
+  <p><%= form_for @recipe, method: :delete do |form| %> 
+    <p><%= form.submit "Remove From My Cookbook" %>
+  <% end %>
+<%else%>
+  <p>
+  <p><%= button_to "Add to My Cookbook", edit_cook_book_path,  method: :get, class: "btn btn-success" %>
+<%end%>
+</tr>
+
 </table>
 </div>
 </ul>
 
-<%= form_for @recipe, method: :delete do |form| %> 
-<%= form.submit "remove from my cookbook" %>
-<% end %>

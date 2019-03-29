@@ -1,6 +1,7 @@
 <h1><%= @cook_book.name %></h1>
+<p><%= link_to "Back to My Kitchen", user_path(@user)%>
 <br>
-<p>What would you like to eat today?</p>
+<h4>What would you like to eat today?</h4>
 <% @cook_book.recipes.each do |recipe| %>
   <ol><%= link_to recipe.name, recipe_path(recipe) %> 
   </ol>

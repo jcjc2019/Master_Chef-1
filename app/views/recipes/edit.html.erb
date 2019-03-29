@@ -36,7 +36,7 @@
     <div class="form-group row">
         <div class ="col-auto">  
             <h4><% form.label "Ingredients" %>Select from currently available ingredients:</h4>
-            <p></p><%= form.collection_check_boxes :ingredient_ids, Ingredient.all, :id, :name %>
+            <p><%= form.collection_check_boxes :ingredient_ids, Ingredient.all, :id, :name %>
             <p>
         </div>
     </div> 
