@@ -25,5 +25,25 @@ class Recipe < ApplicationRecord
         end
     end
 
+    # def self.search(search)
+    #     if search
+    #         ingredient = Ingredient.find_by(name:search)
+    #         if ingredient
+    #             self.where(ingredient_id: ingredient)
+    #         else
+    #             Recipe.all
+    #         end
+    #     else
+    #         Recipe.all
+    #     end
+    # end
+
+    def self.search(name)
+        if name
+            where('name LIKE ?', "%#{name}%").order('id DESC')
+        else
+            all
+        end
+    end
 
 end

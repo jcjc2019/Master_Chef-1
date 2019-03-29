@@ -13,7 +13,9 @@
 <tr>
   <p class = "text-center text-light">Origin Country: <%= @ingredient.origin_country %>
 </tr>
-
+<tr>
+  <p class= "text-center text-light"><%= button_to "Edit Ingredient", edit_ingredient_path,  method: :get, class: "btn btn-success" %>
+</tr>
 
 </table>
 </div>

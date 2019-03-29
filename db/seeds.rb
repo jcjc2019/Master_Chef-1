@@ -110,10 +110,10 @@ class Rectable
 
 #create join table by grab previous tables' ids and second table's ids
 
-      cook_book = CookBook.create({
-            name: row['cookbook_name']})
-            #recipe_id: recipe.id})
-            # user_id: user.id
+      # cook_book = CookBook.create({
+      #       name: row['cookbook_name']})
+      #       #recipe_id: recipe.id})
+      #       # user_id: user.id
 
     #   ingredient = Ingredient.find_or_create_by({
     #       name: row['ingredient_name'],

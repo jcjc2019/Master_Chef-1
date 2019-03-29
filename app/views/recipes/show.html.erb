@@ -75,7 +75,7 @@
 <div class="collapse" id="ingredients">
   <div class="card card-body">
     <% @recipe.ingredients.each do | ingredient | %>
-      <p><%= ingredient.name %>
+      <p><%= link_to ingredient.name, ingredient_path(ingredient) %>
     <%end%>
   </div>
 </div>

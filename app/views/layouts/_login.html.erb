@@ -23,11 +23,14 @@
       </li>
 
 
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-
+      <%= form_tag(search_page_path, :method => "get", class:"form-inline my-2 my-lg-0") do %>  
+          <div class="input-group" input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">  
+            <%= search_field_tag :search, params[:search], placeholder: "Search our site", class: "form-control" %> 
+          <div class='input-group-btn'>
+            <%= button_tag "Search", :class => 'btn btn-outline-success my-2 my-sm-0', :name => nil%>
+          </div>  
+        </div>  
+      <%end%>
     </nav>
   </div>
 

@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   root to: 'sessions#index'
   put '/recipes/:id/add_likes', to: 'recipes#add_likes' #add patch route under this route. 
   post '/sessions/new', to: 'sessions#create' 
+  
+  get '/search' => 'pages#search', :as => 'search_page'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
        

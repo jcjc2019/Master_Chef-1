@@ -18,7 +18,7 @@
     <h3><%= button_to "Create A New Recipe", new_recipe_path,  method:"get", class: "btn btn-success" %></h3>
   </td>
   <td>
-     <h3><%= button_to "Log out", session_path("current"),  method:"delete", data: {:confirm => "Are you sure?"}, class: "btn btn-success" %></h3>
+     <h3><%= button_to "Log out", session_path("current"),  method:"delete", data: {:confirm => "Are you sure?"}, class: "btn btn-danger" %></h3>
   </td>
  </table> 
  </div>
@@ -32,7 +32,6 @@
 <br>
 <br>
 <br>
-
 
 
 <h4 class="d-flex justify-content-center">All My Recipes</h4>

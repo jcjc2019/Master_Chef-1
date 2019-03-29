@@ -2,7 +2,7 @@ class RecipesController < ApplicationController
     skip_before_action :authenticate, only:[:index]
 
     def index
-        @recipes = Recipe.all
+        @recipes = Recipe.search(params[:name])
     end
 
     def show
