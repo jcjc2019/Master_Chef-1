@@ -1,29 +1,45 @@
-<h1>My Kitchen</h1>
+<h1 class = "text-center" >My Kitchen</h1>
 <% if current_user %>
- <strong>Logged in as <%= current_user.username %></strong>
+ <p class = "text-center">Logged in as <%= current_user.username %></p>
+ <p class = "text-center"><%= link_to "Edit my profile", edit_user_path,  method:"get" %>
 <% end %>
 <br>
 <br>
-<br>
-<br>
-<br>
 
-<h4>My Cookbook</h4>
+ <div class="d-flex justify-content-center">
+<div class="form-group">
+ <div class="table-responsive">
+<table class="cook_book_recipe_table text-center">
+<tr>
+  <td>
+    <h3><%= button_to "Create A New Cookbook", new_cook_book_path,  method:"get", class: "btn btn-success" %></h3>
+  </td>
+  <td>
+    <h3><%= button_to "Create A New Recipe", new_recipe_path,  method:"get", class: "btn btn-success" %></h3>
+  </td>
+  <td>
+     <h3><%= button_to "Log out", session_path("current"),  method:"delete", data: {:confirm => "Are you sure?"}, class: "btn btn-success" %></h3>
+  </td>
+ </table> 
+ </div>
+ </div>
+</div>
+
+<p><h4 class ="d-flex justify-content-center">My Cookbooks</h4>
 <% @user.cook_books.each do |cook_book|%></p>
-    <h5><ol><%= link_to cook_book.name, cook_book_path(cook_book) %></ol></h5>
+    <h5 class="text-center"><ol><%= link_to cook_book.name, cook_book_path(cook_book) %></ol></h5>
 <%end%>
 <br>
 <br>
 <br>
-<h3><%= button_to "Create a new cookbook", new_cook_book_path,  method:"get", class: "btn btn-success" %></h3>
-<h3><%= button_to "Create a new recipe", new_recipe_path,  method:"get", class: "btn btn-success" %></h3>
 
 
-<h4>All Recipes Submitted by Me</h4>
+
+<h4 class="d-flex justify-content-center">All My Recipes</h4>
 <% @user.recipes.each do |recipe|%></p>
-    <p><%= recipe.name %>
+    <p class ="text-center"><%= link_to recipe.name, recipe_path(recipe) %>
 <%end%>
  
 </ul>
 
-<%= button_to "Log out", session_path("current"),  method:"delete", class: "btn btn-success" %>
+

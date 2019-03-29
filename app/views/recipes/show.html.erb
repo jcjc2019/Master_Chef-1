@@ -3,7 +3,7 @@
 
 <ul>
 <div class="table-responsive-xl">
-<table class="table">
+<table class="table" >
 
 <tr>
   <p><img src= "<%= @recipe.img_url %>" class="rounded" height="600" width="500">
@@ -15,7 +15,7 @@
 
 
 <tr>
-  <p>Sweet Level: <%= @recipe.sugar_level %>
+  <p >Sweet Level: <%= @recipe.sugar_level %>
 </tr>
 
 <tr>
@@ -88,14 +88,22 @@
 <tr>
   <%= form_tag action = "/recipes/#{@recipe.id}/add_likes", method: 'put' do %>
   <%= submit_tag "Like", class: "btn btn-danger"%> 
-      <%= @recipe.likes %>
+      <span> <%= @recipe.likes %></span> 
   <%end%>
+</tr>
+
+<tr>
+<%if @user.recipes.include?(@recipe)%>
+  <p><%= form_for @recipe, method: :delete do |form| %> 
+    <p><%= form.submit "Remove From My Cookbook" %>
+  <% end %>
+<%else%>
+  <p>
+  <p><%= button_to "Add to My Cookbook", edit_cook_book_path,  method: :get, class: "btn btn-success" %>
+<%end%>
 </tr>
 
 </table>
 </div>
 </ul>
 
-<%= form_for @recipe, method: :delete do |form| %> 
-<%= form.submit "remove from my cookbook" %>
-<% end %>
