@@ -1,29 +1,35 @@
-<h1>My Kitchen</h1>
+<h1 class = "text-center" >My Kitchen</h1>
 <% if current_user %>
- <strong>Logged in as <%= current_user.username %></strong>
+ <p class = "text-center">Logged in as <%= current_user.username %> 
 <% end %>
 <br>
 <br>
 <br>
-<br>
-<br>
 
-<h4>My Cookbook</h4>
-<% @user.cook_books.each do |cook_book|%></p>
-    <h5><ol><%= link_to cook_book.name, cook_book_path(cook_book) %></ol></h5>
+<h4 class = "text-center">My Cookbooks</h4>
+<% @user.cook_books.each do |cook_book|%>
+    <h5 class = "text-center"><ol><%= link_to cook_book.name, cook_book_path(cook_book) %></ol></h5>
 <%end%>
 <br>
-<br>
-<br>
-<h3><%= button_to "Create a new cookbook", new_cook_book_path,  method:"get", class: "btn btn-success" %></h3>
-<h3><%= button_to "Create a new recipe", new_recipe_path,  method:"get", class: "btn btn-success" %></h3>
 
+<table class="cook_book_recipe_table text-center" style = "margin-left: 310px; margin-top:10px" >
+<tr>
+  <td>
+    <h3 class = "text-center"><%= button_to "Create a new cookbook", new_cook_book_path,  method:"get", class: "btn btn-success" %></h3>
+  </td>
+  <td>
+    <h3 class = "text-center"><%= button_to "Create a new recipe", new_recipe_path,  method:"get", class: "btn btn-success" %></h3>
+  </td>
+  <td>
+     <h3 class = "text-center"><%= button_to "Log out", session_path("current"),  method:"delete", class: "btn btn-success" %></h3>
+  </td>
+ </table> 
+ <br>
 
-<h4>All Recipes Submitted by Me</h4>
+<h4 class = "text-center">Recipes created by Me</h4>
 <% @user.recipes.each do |recipe|%></p>
-    <p><%= recipe.name %>
+    <p class = "text-center"><%= recipe.name %>
 <%end%>
  
 </ul>
 
-<%= button_to "Log out", session_path("current"),  method:"delete", class: "btn btn-success" %>
