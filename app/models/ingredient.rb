@@ -4,6 +4,10 @@ class Ingredient < ApplicationRecord
     
     validates :name, presence: true
 
+    def self.counts
+        self.all.count
+    end
+
     def self.recipes_with(name)
         Recipe.find_by!(name:name).ingredients
     end
@@ -16,9 +20,9 @@ class Ingredient < ApplicationRecord
         recipes.map(&:name).join(', ')
     end
 
-    # def recipe_list=(names)
-    #     self.recipes = names.split(',').map do |n|
-    #         Recipe.where(name: n.strip).first_or_create!
-    #     end
-    # end
+    def recipe_list=(names)
+        self.recipes = names.split(',').map do |n|
+            Recipe.where(name: n.strip).first_or_create!
+        end
+    end
 end

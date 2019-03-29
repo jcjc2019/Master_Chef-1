@@ -1,0 +1,60 @@
+
+<p>
+<p>
+<h1 class="text-light text-center">Interesting Stats</h1>
+<br>
+<br>
+<br>
+
+
+<h2 class="text-light"> You can find <%=Recipe.counts%> recipes and <%=Ingredient.counts%> ingredients here. </h2>
+<ul class="text-light">
+    <p>
+    <p>
+    <h3>Facts about Calories</h3>
+    <p>
+    <li> The dish with lowest calorie is <%=link_to "#{Recipe.health.name}", recipe_path(Recipe.health)%>.</li>
+    <li> The dish with lowest calorie is <%=link_to "#{Recipe.unhealth.name}", recipe_path(Recipe.unhealth)%>.</li>
+    <p>
+    <p>
+    <h3>Facts about Tastes</h3>
+    <p>
+    <li> There are <%=Recipe.hot_dishes.size%> dishes with highest level of spicyness. They are</li>
+        <ul><% Recipe.hot_dishes.each do | dish |%>
+            <li><%= link_to "#{dish.name}", recipe_path(dish.name)%></li>
+        <%end%>
+        </ul>
+    <li> The sweetest dish is <%=link_to "#{Recipe.most_sweet_dish.name}", recipe_path(Recipe.most_sweet_dish)%>, its sugar level is <%=Recipe.most_sweet_dish.sugar_level%>. </li>
+    <li> The least sweet dish is <%=link_to "#{Recipe.least_sweet_dish.name}", recipe_path(Recipe.least_sweet_dish)%>, its sugar level is <%=Recipe.least_sweet_dish.sugar_level%>. </li>
+    <p>
+    <p>
+
+    <h3>Facts about Popularity</h3>
+    <p>
+    <li> The most popular dish is <%=link_to "#{Recipe.most_popular_dish.name}", recipe_path(Recipe.most_popular_dish)%>. </li>
+    <p>
+    <li> The top 3 popular dishes are:
+        <ul><%Recipe.top_three_popular_dishes.each do | dish |%>
+            <li><%=link_to "#{dish.name}", recipe_path(dish)%></li> 
+        <%end%>
+        </ul>
+
+    <p>
+    <h3>Facts about Chinese Cuisine</h3>
+    
+    <ul>
+    <h4>Eight Regional Chinese Cuisines</h4>
+    <p>
+    <p>
+    <li>Anhui (徽菜 Huīcài)</li>   
+    <li>Cantonese (粤菜; Yuècài)</li>
+    <li>Fujian (闽菜; Mǐncài)</li>
+    <li>Hunan (湘菜; Xiāngcài)</li>
+    <li>Jiangsu (苏菜; Sūcài)</li>
+    <li>Shandong (鲁菜; Lǔcài)</li>
+    <li>Sichuan (川菜; Chuāncài)</li>
+    <li>Zhejiang (浙菜; Zhècài)</li>
+    </ul>
+    
+
+</ul>

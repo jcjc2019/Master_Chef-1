@@ -22,6 +22,9 @@
         <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/ingredients') ? 'active' : '' %>" href="/ingredients" ><strong style = "font-size:18px">Ingredients</strong></a>
       </li>
 
+      <li class="nav-item">
+        <a class="nav-link <%= request.env['PATH_INFO'].starts_with?('/stats') ? 'active' : '' %>" href="/stats" ><strong style = "font-size:18px">Stats</strong></a>
+      </li>
 
       <%= form_tag(search_page_path, :method => "get", class:"form-inline my-2 my-lg-0") do %>  
           <div class="input-group" input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">  

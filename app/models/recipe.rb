@@ -9,6 +9,41 @@ class Recipe < ApplicationRecord
     validates :cook_time, presence: true
     accepts_nested_attributes_for :ingredients
     
+    def self.counts
+        self.all.count
+    end
+
+    def self.health
+        self.all.sort_by { |r|r.calories}.first
+    end
+
+    def self.unhealth
+        self.all.sort_by { |r|r.calories}.last
+    end
+
+    def self.hot_dishes
+        self.all.select{|r|r.spicy_level == "hot"}
+    end
+
+    def self.most_sweet_dish
+        self.all.sort_by { |r|r.sugar_level}.last
+    end
+
+    def self.least_sweet_dish
+        self.all.sort_by { |r|r.sugar_level}.first
+    end
+
+    def self.most_popular_dish
+        self.all.sort_by { |r|r.likes}.last       
+    end
+
+    def self.top_three_popular_dishes
+        self.all.sort_by { |r|r.likes}.last(3).reverse      
+    end
+
+    def self.least_popular_dish
+        self.all.sort_by { |r|r.likes}.first       
+    end
 
     def self.ingredients_with(name)
         Ingredient.find_by!(name:name).recipes

@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   post '/sessions/new', to: 'sessions#create' 
   
   get '/search' => 'pages#search', :as => 'search_page'
-
+  get '/stats' => 'pages#stats'
   post '/users/:id', to:'users#show'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
