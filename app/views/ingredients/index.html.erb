@@ -1,14 +1,14 @@
 <p>
 <p>
-<h1 class = "text-center text-light">All Ingredients</h1>
+<h1 class = "text-center">All Ingredients</h1>
 <p>
 <ul>
 
 <% @ingredients.each do |ingredient| %>
-    <li class = "text-center text-light"><h3><%= link_to "#{ingredient.name}", ingredient_path(ingredient)%></h3></li>
-    <p class = "text-center text-light">Recipes used this ingredient: 
+    <li class = "text-center"><h3><%= link_to "#{ingredient.name}", ingredient_path(ingredient)%></h3></li>
+    <p class = "text-center">Recipes used this ingredient: 
     <% ingredient.recipes.each do | recipe | %>
-      <p class = "text-center text-light"><%= link_to "#{recipe.name}", recipe_path(recipe)%>
+      <p class = "text-center"><%= link_to "#{recipe.name}", recipe_path(recipe)%>
     <% end %>
     
   <% end %>

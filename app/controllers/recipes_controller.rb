@@ -1,8 +1,13 @@
 class RecipesController < ApplicationController
     skip_before_action :authenticate, only:[:index]
 
-    def index
-        @recipes = Recipe.all
+    def index 
+        if params[:search] != nil
+        @recipes = Recipe.search(params[:search])
+          if @recipes == nil
+             @message = "Sorry, we don't have that yet"
+          end
+        end
     end
 
     def show
@@ -71,6 +76,6 @@ class RecipesController < ApplicationController
     private
 
     def recipe_params
-        params.permit(recipe:[:name, :language, :region, :instructions, :history, :comment, :cook_time, :origin_century, :spicy_level, :sugar_level, :calories, :likes, :img_url, :ingredient_ids => [], :ingredients_attributes => [:name, :description, :origin_country]])
+        params.permit(recipe:[:name, :language, :region, :instructions, :history, :comment, :cook_time, :origin_century, :spicy_level, :sugar_level, :calories, :likes, :img_url, :search, :ingredient_ids => [], :ingredients_attributes => [:name, :description, :origin_country]])
     end
 end

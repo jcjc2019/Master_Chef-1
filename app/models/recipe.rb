@@ -25,5 +25,15 @@ class Recipe < ApplicationRecord
         end
     end
 
+    def self.search(search)
+        search = search.capitalize
+        selected_ingredient = Ingredient.find_by(name:search)
+        if selected_ingredient
+            Recipe.all.select do |recipe|
+            recipe.ingredients.include?(selected_ingredient)
+            end
+        end    
+    end
 
+    
 end

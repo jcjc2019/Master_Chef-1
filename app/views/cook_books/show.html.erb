@@ -1,12 +1,21 @@
-<h1 class="text-left" style = "margin-left:160px"><%= @cook_book.name %></h1>
-<p class="text-center"><%= link_to "Back to My Kitchen", user_path(@user)%>
-<br>
+<h1 class="text-left text-light" style = "margin-left:160px"><%= @cook_book.name %> Book </h1>
 
+<table style = "margin-left:160px">
+  <tr>
+    <td>
+      <%= button_to "Back to My Kitchen", user_path(@user), class: "btn btn-success"%><br>
+    </td>
+  </tr>
+</table>
 <h4 class = "text-light" style = "margin-left:160px">What would you like to eat today?</h4>
+
+
 <% @cook_book.recipes.each do |recipe| %>
   <p><ol style = "margin-left:120px"><h5 class = "text-light"><%= link_to recipe.name, recipe_path(recipe) %> </h5>
   </ol>
 <% end %>
+<br>
+<br>
 
 <!-- <a href="/cook_books/<%= @cook_book.id%>/edit">Edit Cook Book</a> -->
 <table style = "margin-left:160px">
@@ -17,7 +26,7 @@
  <tr>
   <td>
   <%= form_for @cook_book, method: :delete do |form| %>
-  <%= form.submit "Delete this cookbook" %> 
+  <%= form.submit "Delete this cookbook", class: "btn btn-success" %> 
 <% end %> 
   </td>
   </tr> 

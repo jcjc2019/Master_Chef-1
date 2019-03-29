@@ -29,14 +29,6 @@ class UsersController < ApplicationController
         @user = current_user
     end      
 
-    # # def show
-    # #     @user = current_user if(current_user)
-    # # end
-
-    # def new 
-    #     @errors = flash[:errors] || {}
-    #     @user = User.new(user_params[:user])
-    # end
 
 
     def edit
