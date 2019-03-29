@@ -4,7 +4,7 @@
 <p>
 <ul>
 
-  <% @ingredients.each do |ingredient| %>
+<% @ingredients.each do |ingredient| %>
     <li class = "text-center text-light"><h3><%= link_to "#{ingredient.name}", ingredient_path(ingredient)%></h3></li>
     <p class = "text-center text-light">Recipes used this ingredient: 
     <% ingredient.recipes.each do | recipe | %>
