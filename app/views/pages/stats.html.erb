@@ -14,14 +14,14 @@
     <h3>Facts about Calories</h3>
     <p>
     <li> The dish with lowest calorie is <%=link_to "#{Recipe.health.name}", recipe_path(Recipe.health)%>.</li>
-    <li> The dish with lowest calorie is <%=link_to "#{Recipe.unhealth.name}", recipe_path(Recipe.unhealth)%>.</li>
+    <li> The dish with highest calorie is <%=link_to "#{Recipe.unhealth.name}", recipe_path(Recipe.unhealth)%>.</li>
     <p>
     <p>
     <h3>Facts about Tastes</h3>
     <p>
     <li> There are <%=Recipe.hot_dishes.size%> dishes with highest level of spicyness. They are</li>
         <ul><% Recipe.hot_dishes.each do | dish |%>
-            <li><%= link_to "#{dish.name}", recipe_path(dish.name)%></li>
+            <li><%= link_to "#{dish.name}", recipe_path(dish)%></li>
         <%end%>
         </ul>
     <li> The sweetest dish is <%=link_to "#{Recipe.most_sweet_dish.name}", recipe_path(Recipe.most_sweet_dish)%>, its sugar level is <%=Recipe.most_sweet_dish.sugar_level%>. </li>

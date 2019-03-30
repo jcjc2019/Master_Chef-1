@@ -15,7 +15,7 @@
 <h4 class="text-light"> Ingredients: </h4>
 <% if @ing_results.size != 0 %>
     <% @ing_results.each do | result |%>
-        <p class="text-light"><%= link_to result.name, recipe_path(result)%><br>
+        <p class="text-light"><%= link_to result.name, ingredient_path(result)%><br>
     <%end%>
 <% else%>
     <p class="text-light">No search result for ingredient.
