@@ -1,4 +1,4 @@
-# MasterChef
+# MasterChef: A Website of Authentic Chinese Food Recipes
 
 ## Overview
 
@@ -9,7 +9,8 @@ A recipe website for users to browse and collect Chinese food recipes, create/ed
 - A user can create, edit, rename, and delete cookbooks.
 - A user can browse and collect Chinese food recipes.
 - A user can create and like food recipes and ingredients.
-- A user can learn Chinese food culture and history.
+- The back-end database contains carefully-crafted authentic Chinese food recipes collected and selected by the designers.
+- A user can learn Chinese food culture and history through the carefully-crafted food recipes.
 
 ## Built with
 
