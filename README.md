@@ -1,24 +1,18 @@
-# README
+# MasterChef
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
 
-Things you may want to cover:
+A recipe website for users to browse and collect Chinese food recipes, create/edit/delete cookbooks, and learn Chinese history and culture.
 
-* Ruby version
+## Built with
 
-* System dependencies
+- Ruby on Rails
+- Bootstrap 4
 
-* Configuration
+## Contributors
+Jing Chen
+Zoe Bai
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Video Demo
+8-min demo: https://youtu.be/PvS-EmBfIQk
+4-min demo: https://www.youtube.com/watch?v=pmTQIqLQLN0
